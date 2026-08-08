@@ -1,0 +1,2506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sage & Butler | Café, Coffee & Breakfast in East Toowoomba</title>
+    <meta name="description" content="Discover Sage & Butler, a neighbourhood café in East Toowoomba serving coffee by Single O, breakfast, brunch, baked treats and warm hospitality. Open Mon–Fri 6:30am–2pm, Sat–Sun 6:30am–12pm. Dine-in, takeaway & delivery.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Sage & Butler">
+    <link rel="canonical" href="https://www.sageandbutler.com.au/">
+
+    <meta property="og:title" content="Sage & Butler | Neighbourhood Café in East Toowoomba">
+    <meta property="og:description" content="Coffee, breakfast, brunch & baked treats in East Toowoomba. Open Mon–Fri 6:30am–2pm, Sat–Sun 6:30am–12pm. Order online or visit us at 62 Margaret St.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sageandbutler.com.au/">
+    <meta property="og:site_name" content="Sage & Butler">
+    <meta property="og:image" content="https://raw.githubusercontent.com/deardecoder/Sage-Butler/main/fulllogo.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sage & Butler | Neighbourhood Café in East Toowoomba">
+    <meta name="twitter:description" content="Coffee, breakfast, brunch & baked treats in East Toowoomba. Order online or visit us.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/deardecoder/Sage-Butler/main/fulllogo.png">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/deardecoder/Sage-Butler/main/Squarelogo.png">
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/deardecoder/Sage-Butler/main/Squarelogo.png">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CafeOrCoffeeShop",
+            "name": "Sage & Butler",
+            "description": "A neighbourhood café in East Toowoomba serving coffee by Single O, breakfast, brunch, baked treats and warm hospitality.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "62 Margaret St",
+                "addressLocality": "East Toowoomba",
+                "addressRegion": "QLD",
+                "postalCode": "4350",
+                "addressCountry": "AU"
+            },
+            "telephone": "+61745734883",
+            "url": "https://www.sageandbutler.com.au",
+            "sameAs": [
+                "https://www.facebook.com/sagebutlerneighbourhoodcafe",
+                "https://www.instagram.com/sageandbutlercafe/"
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.7",
+                "reviewCount": "230",
+                "bestRating": "5"
+            },
+            "priceRange": "$$",
+            "openingHoursSpecification": [
+                { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "06:30", "closes": "14:00" },
+                { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "06:30", "closes": "12:00" }
+            ],
+            "servesCuisine": ["Café", "Australian", "Breakfast", "Brunch"]
+        }
+    </script>
+
+    <style>
+        :root {
+            --sage: #7A8C6F;
+            --sage-dark: #5A6B52;
+            --sage-light: #9BAF8E;
+            --sage-pale: #E8EDE3;
+            --sage-soft: #F1F5ED;
+            --cream: #FBF7F2;
+            --ivory: #FDF9F4;
+            --sand: #E8DDD0;
+            --sand-light: #F3EDE6;
+            --charcoal: #2D2A26;
+            --charcoal-light: #3D3A35;
+            --warm-brown: #8B7355;
+            --border: #DDD6CD;
+            --muted-text: #6B6560;
+            --white: #FFFFFF;
+            --star-gold: #C8983B;
+            --status-open: #5A8A5C;
+            --status-closed: #B07060;
+            --shadow-sm: 0 1px 3px rgba(45, 42, 38, 0.05);
+            --shadow-md: 0 4px 14px rgba(45, 42, 38, 0.07);
+            --shadow-lg: 0 8px 28px rgba(45, 42, 38, 0.09);
+            --radius-sm: 6px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --radius-xl: 28px;
+            --font-display: 'Playfair Display', 'Cormorant Garamond', 'Georgia', 'Times New Roman', serif;
+            --font-body: 'Source Sans Pro', 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+            --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --max-width: 1200px;
+            --header-height: 68px;
+            --topbar-height: 36px;
+            --mobile-bar-height: 52px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            :root {
+                --transition-fast: 0s;
+                --transition-smooth: 0s;
+            }
+            .animate-on-scroll,
+            .reveal-image,
+            .stagger-item,
+            .hero-image-inner,
+            .botanical-float {
+                animation: none !important;
+                opacity: 1 !important;
+                transform: none !important;
+                transition: none !important;
+            }
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--cream);
+            color: var(--charcoal);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+            min-height: 100vh;
+            padding-bottom: var(--mobile-bar-height);
+            padding-top: calc(var(--topbar-height) + var(--header-height));
+        }
+
+        @media (min-width: 768px) {
+            body {
+                padding-bottom: 0;
+                padding-top: calc(var(--topbar-height) + var(--header-height));
+            }
+        }
+
+        ::selection {
+            background-color: var(--sage-pale);
+            color: var(--sage-dark);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        button {
+            cursor: pointer;
+            font-family: inherit;
+            border: none;
+            background: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: var(--font-display);
+            font-weight: 500;
+            line-height: 1.15;
+            letter-spacing: -0.01em;
+        }
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* ========== TOP INFO BAR ========== */
+        .top-info-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1002;
+            height: var(--topbar-height);
+            background: var(--charcoal);
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+        .top-info-bar-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            white-space: nowrap;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -webkit-overflow-scrolling: touch;
+        }
+        .top-info-bar-inner::-webkit-scrollbar {
+            display: none;
+        }
+        @media (min-width: 768px) {
+            .top-info-bar-inner {
+                gap: 18px;
+                overflow-x: visible;
+                justify-content: center;
+            }
+            .top-info-bar {
+                font-size: 0.72rem;
+            }
+        }
+        .top-info-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            flex-shrink: 0;
+        }
+        .top-info-item svg {
+            width: 12px;
+            height: 12px;
+            flex-shrink: 0;
+            opacity: 0.7;
+        }
+        .top-info-dot {
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.35);
+            flex-shrink: 0;
+        }
+        .status-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-weight: 600;
+        }
+        .status-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        .status-dot.open {
+            background: #5A8A5C;
+            box-shadow: 0 0 6px rgba(90, 138, 92, 0.6);
+        }
+        .status-dot.closed {
+            background: #B07060;
+            box-shadow: 0 0 6px rgba(176, 112, 96, 0.5);
+        }
+        .top-info-rating {
+            color: var(--star-gold);
+            font-weight: 600;
+        }
+        .top-info-bar a {
+            color: rgba(255, 255, 255, 0.85);
+            transition: color var(--transition-fast);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            text-decoration-color: transparent;
+        }
+        .top-info-bar a:hover {
+            color: #fff;
+            text-decoration-color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* ========== HEADER ========== */
+        .site-header {
+            position: fixed;
+            top: var(--topbar-height);
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            height: var(--header-height);
+            background: rgba(251, 247, 242, 0.94);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            transition: box-shadow var(--transition-smooth);
+        }
+        .site-header.scrolled {
+            box-shadow: var(--shadow-sm);
+        }
+        .header-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+        .logo-link {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            z-index: 1001;
+        }
+        .logo-link img {
+            height: 36px;
+            width: auto;
+        }
+        @media (max-width: 374px) {
+            .logo-link img {
+                height: 28px;
+            }
+        }
+        @media (min-width: 768px) {
+            .logo-link img {
+                height: 40px;
+            }
+        }
+
+        .desktop-nav {
+            display: none;
+            align-items: center;
+            gap: 22px;
+        }
+        @media (min-width: 1024px) {
+            .desktop-nav {
+                display: flex;
+            }
+        }
+        .desktop-nav a {
+            font-size: 0.78rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--charcoal);
+            padding: 4px 0;
+            position: relative;
+            transition: color var(--transition-fast);
+        }
+        .desktop-nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--sage);
+            border-radius: 1px;
+            transition: width var(--transition-smooth);
+        }
+        .desktop-nav a:hover::after,
+        .desktop-nav a:focus-visible::after {
+            width: 100%;
+        }
+        .desktop-nav a:hover {
+            color: var(--sage-dark);
+        }
+
+        .header-social {
+            display: none;
+            align-items: center;
+            gap: 6px;
+        }
+        @media (min-width: 1024px) {
+            .header-social {
+                display: flex;
+            }
+        }
+        .header-social a {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--muted-text);
+            transition: all var(--transition-fast);
+            border: 1px solid transparent;
+        }
+        .header-social a:hover {
+            color: var(--sage-dark);
+            background: var(--sage-pale);
+            border-color: var(--border);
+        }
+        .header-social svg {
+            width: 15px;
+            height: 15px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.02em;
+            transition: all var(--transition-smooth);
+            white-space: nowrap;
+            cursor: pointer;
+            border: 2px solid transparent;
+            text-align: center;
+            justify-content: center;
+        }
+        .btn-primary {
+            background: var(--sage);
+            color: var(--white);
+            border-color: var(--sage);
+        }
+        .btn-primary:hover,
+        .btn-primary:focus-visible {
+            background: var(--sage-dark);
+            border-color: var(--sage-dark);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+        .btn-outline {
+            background: transparent;
+            color: var(--charcoal);
+            border-color: var(--border);
+        }
+        .btn-outline:hover,
+        .btn-outline:focus-visible {
+            background: var(--white);
+            border-color: var(--charcoal);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-sm);
+        }
+        .btn-sm {
+            padding: 7px 14px;
+            font-size: 0.76rem;
+            border-radius: 40px;
+        }
+        .btn-arrow {
+            transition: transform var(--transition-fast);
+        }
+        .btn:hover .btn-arrow,
+        .btn:focus-visible .btn-arrow {
+            transform: translateX(2px);
+        }
+        .header-cta {
+            display: none;
+        }
+        @media (min-width: 768px) {
+            .header-cta {
+                display: inline-flex;
+            }
+        }
+
+        .hamburger {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            z-index: 1001;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        @media (min-width: 1024px) {
+            .hamburger {
+                display: none;
+            }
+        }
+        .hamburger-line {
+            position: relative;
+            width: 20px;
+            height: 2px;
+            background: var(--charcoal);
+            border-radius: 2px;
+            transition: all var(--transition-smooth);
+        }
+        .hamburger-line::before,
+        .hamburger-line::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 20px;
+            height: 2px;
+            background: var(--charcoal);
+            border-radius: 2px;
+            transition: all var(--transition-smooth);
+        }
+        .hamburger-line::before {
+            top: -6px;
+        }
+        .hamburger-line::after {
+            top: 6px;
+        }
+        .hamburger.active .hamburger-line {
+            background: transparent;
+        }
+        .hamburger.active .hamburger-line::before {
+            top: 0;
+            transform: rotate(45deg);
+        }
+        .hamburger.active .hamburger-line::after {
+            top: 0;
+            transform: rotate(-45deg);
+        }
+
+        /* Mobile Nav */
+        .mobile-nav {
+            position: fixed;
+            inset: 0;
+            z-index: 999;
+            background: rgba(45, 42, 38, 0.45);
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity var(--transition-smooth);
+        }
+        .mobile-nav.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .mobile-nav-panel {
+            background: var(--cream);
+            width: min(82vw, 360px);
+            height: 100%;
+            padding: 90px 28px 36px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            transform: translateX(100%);
+            transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+            overflow-y: auto;
+            box-shadow: var(--shadow-lg);
+        }
+        .mobile-nav.active .mobile-nav-panel {
+            transform: translateX(0);
+        }
+        .mobile-nav a {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            padding: 10px 0;
+            color: var(--charcoal);
+            border-bottom: 1px solid var(--border);
+            display: block;
+            transition: color var(--transition-fast), padding-left var(--transition-fast);
+        }
+        .mobile-nav a:hover {
+            color: var(--sage-dark);
+            padding-left: 6px;
+        }
+        .mobile-nav .mobile-social-row {
+            display: flex;
+            gap: 10px;
+            margin-top: 16px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+        }
+        .mobile-nav .mobile-social-row a {
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            border-bottom: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            border-radius: 50px;
+            border: 1px solid var(--border);
+            transition: all var(--transition-fast);
+        }
+        .mobile-nav .mobile-social-row a:hover {
+            background: var(--sage-pale);
+            border-color: var(--sage);
+            padding-left: 14px;
+        }
+        .mobile-nav .btn-primary {
+            margin-top: 16px;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            width: 100%;
+            justify-content: center;
+        }
+
+        /* ========== HERO ========== */
+        .hero {
+            min-height: 75vh;
+            min-height: 70dvh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background: var(--charcoal);
+            margin-top: 0;
+        }
+        @media (min-width: 768px) {
+            .hero {
+                min-height: 80vh;
+                min-height: 75dvh;
+            }
+        }
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+        .hero-image-inner {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(160deg, #3D3A35 0%, #2D2A26 30%, #5A6B52 70%, #7A8C6F 100%);
+            position: relative;
+            overflow: hidden;
+            animation: heroImageReveal 1.1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+        }
+        @keyframes heroImageReveal {
+            from {
+                transform: scale(1.06);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        .hero-image-inner::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at center, transparent 35%, rgba(45, 42, 38, 0.5) 100%);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+            width: 100%;
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+        }
+        @media (min-width: 768px) {
+            .hero-content {
+                padding: 50px 36px;
+                gap: 20px;
+            }
+        }
+        @keyframes fadeRise {
+            from {
+                opacity: 0;
+                transform: translateY(18px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .hero-logo-reveal {
+            opacity: 0;
+            animation: fadeRise 0.7s 0.25s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+        }
+        .hero-logo-reveal img {
+            height: 44px;
+            width: auto;
+            filter: brightness(0) invert(1);
+        }
+        @media (min-width: 768px) {
+            .hero-logo-reveal img {
+                height: 50px;
+            }
+        }
+        .hero-headline {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4.5vw, 3.6rem);
+            font-weight: 500;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            max-width: 650px;
+            opacity: 0;
+            animation: fadeRise 0.7s 0.45s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+        }
+        .hero-subtitle {
+            font-size: clamp(0.95rem, 1.6vw, 1.1rem);
+            max-width: 480px;
+            color: rgba(255, 255, 255, 0.82);
+            opacity: 0;
+            animation: fadeRise 0.7s 0.6s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+        }
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            opacity: 0;
+            animation: fadeRise 0.7s 0.75s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+        }
+        .hero-actions .btn {
+            font-size: 0.9rem;
+            padding: 12px 24px;
+        }
+        .hero-actions .btn-outline {
+            border-color: rgba(255, 255, 255, 0.45);
+            color: var(--white);
+        }
+        .hero-actions .btn-outline:hover {
+            border-color: var(--white);
+            background: rgba(255, 255, 255, 0.08);
+        }
+        .hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.82rem;
+            color: rgba(255, 255, 255, 0.75);
+            opacity: 0;
+            animation: fadeRise 0.7s 0.85s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+        }
+        .hero-meta svg {
+            width: 13px;
+            height: 13px;
+            opacity: 0.7;
+        }
+        .hero-meta-dot {
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.35);
+        }
+
+        /* ========== SECTIONS ========== */
+        .section {
+            padding: 56px 18px;
+            position: relative;
+            overflow: hidden;
+        }
+        @media (min-width: 768px) {
+            .section {
+                padding: 80px 36px;
+            }
+        }
+        @media (min-width: 1200px) {
+            .section {
+                padding: 96px 36px;
+            }
+        }
+        .section-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            width: 100%;
+        }
+        .section-dark {
+            background: var(--charcoal);
+            color: var(--cream);
+        }
+        .section-sage {
+            background: var(--sage-soft);
+        }
+        .section-cream {
+            background: var(--cream);
+        }
+        .section-ivory {
+            background: var(--ivory);
+        }
+        .section-sand {
+            background: var(--sand-light);
+        }
+
+        .section-label {
+            font-family: var(--font-body);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--sage-dark);
+            font-weight: 600;
+            display: block;
+            margin-bottom: 6px;
+        }
+        .section-heading {
+            font-size: clamp(1.7rem, 3.2vw, 2.4rem);
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            margin-bottom: 8px;
+        }
+        .section-sub {
+            color: var(--muted-text);
+            font-size: 0.95rem;
+            max-width: 500px;
+        }
+
+        /* ========== BRAND INTRO ========== */
+        .brand-intro {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+            align-items: center;
+        }
+        @media (min-width: 768px) {
+            .brand-intro {
+                grid-template-columns: 1fr 1fr;
+                gap: 50px;
+            }
+        }
+        .brand-intro-image {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            aspect-ratio: 4/5;
+            background: linear-gradient(150deg, #C8BFB2 0%, #A89880 40%, #8B7355 70%, #6B5B45 100%);
+            position: relative;
+        }
+        .brand-intro-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 30% 40%, rgba(255, 255, 255, 0.08) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .brand-intro-text {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .brand-description {
+            font-size: 1rem;
+            line-height: 1.65;
+            color: var(--muted-text);
+            max-width: 460px;
+        }
+
+        /* ========== FEATURED FOOD ========== */
+        .featured-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+        @media (min-width: 768px) {
+            .featured-grid {
+                grid-template-columns: 2fr 1fr 1fr;
+                grid-template-rows: 240px 240px;
+                gap: 16px;
+            }
+        }
+        .featured-card {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            position: relative;
+            background: var(--white);
+            box-shadow: var(--shadow-sm);
+            transition: all var(--transition-smooth);
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid var(--border);
+        }
+        .featured-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+        .featured-card-large {
+            grid-row: span 2;
+        }
+        .featured-card-image {
+            flex: 1;
+            min-height: 140px;
+            overflow: hidden;
+        }
+        .featured-card-large .featured-card-image {
+            min-height: 260px;
+        }
+        .fc-img-1 {
+            background: linear-gradient(135deg, #E8DDD0 0%, #D5C4B0 50%, #C4A882 100%);
+        }
+        .fc-img-2 {
+            background: linear-gradient(135deg, #3D3A35 0%, #5A4A3A 50%, #7A5C3E 100%);
+        }
+        .fc-img-3 {
+            background: linear-gradient(135deg, #F3EDE6 0%, #E8DDD0 50%, #D9C8B0 100%);
+        }
+        .fc-img-4 {
+            background: linear-gradient(135deg, #6B5B45 0%, #8B7355 50%, #A89074 100%);
+        }
+        .fc-img-5 {
+            background: linear-gradient(135deg, #9BAF8E 0%, #7A8C6F 50%, #5A6B52 100%);
+        }
+        .featured-card-img-placeholder {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+        .featured-card:hover .featured-card-img-placeholder {
+            transform: scale(1.03);
+        }
+        .featured-card-info {
+            padding: 12px 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            background: var(--white);
+        }
+        .featured-card-category {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            color: var(--sage-dark);
+            font-weight: 600;
+        }
+        .featured-card-name {
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+        .featured-card-price {
+            font-weight: 600;
+            color: var(--sage-dark);
+            font-size: 0.85rem;
+        }
+
+        /* ========== MENU ========== */
+        .menu-section-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .menu-category-tabs {
+            display: flex;
+            gap: 5px;
+            overflow-x: auto;
+            padding-bottom: 6px;
+            margin-bottom: 24px;
+            scroll-snap-type: x proximity;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            justify-content: flex-start;
+        }
+        .menu-category-tabs::-webkit-scrollbar {
+            display: none;
+        }
+        @media (min-width: 768px) {
+            .menu-category-tabs {
+                justify-content: center;
+                overflow-x: visible;
+                gap: 6px;
+            }
+        }
+        .menu-tab {
+            flex-shrink: 0;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.78rem;
+            letter-spacing: 0.03em;
+            border: 1.5px solid var(--border);
+            background: var(--white);
+            color: var(--muted-text);
+            transition: all var(--transition-smooth);
+            scroll-snap-align: start;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .menu-tab:hover {
+            border-color: var(--sage);
+            color: var(--sage-dark);
+        }
+        .menu-tab.active {
+            background: var(--sage);
+            color: var(--white);
+            border-color: var(--sage);
+        }
+        .menu-items-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 6px;
+            transition: opacity var(--transition-fast);
+        }
+        @media (min-width: 768px) {
+            .menu-items-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+        }
+        @media (min-width: 1100px) {
+            .menu-items-grid {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 14px 16px;
+            border-radius: var(--radius-md);
+            background: var(--white);
+            border: 1px solid transparent;
+            transition: all var(--transition-smooth);
+            cursor: default;
+        }
+        .menu-item:hover {
+            border-color: var(--border);
+            box-shadow: var(--shadow-sm);
+        }
+        .menu-item-info {
+            flex: 1;
+            min-width: 0;
+        }
+        .menu-item-name {
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 1px;
+        }
+        .menu-item-desc {
+            font-size: 0.75rem;
+            color: var(--muted-text);
+            line-height: 1.35;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .menu-item-price {
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--sage-dark);
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .menu-item-popular {
+            display: inline-block;
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--warm-brown);
+            font-weight: 600;
+            margin-left: 5px;
+            padding: 1px 7px;
+            background: #FDF3E4;
+            border-radius: 20px;
+        }
+        .menu-egg-note {
+            margin-top: 14px;
+            padding: 10px 16px;
+            background: #FFF9F0;
+            border-radius: var(--radius-md);
+            font-size: 0.75rem;
+            color: var(--warm-brown);
+            font-style: italic;
+            text-align: center;
+            border: 1px solid #F0E4D0;
+        }
+
+        /* ========== SOCIAL FOLLOW SECTION ========== */
+        .social-follow {
+            text-align: center;
+        }
+        .social-follow-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        @media (min-width: 600px) {
+            .social-follow-cards {
+                gap: 16px;
+            }
+        }
+        .social-follow-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 28px 16px;
+            border-radius: var(--radius-lg);
+            background: var(--white);
+            border: 1px solid var(--border);
+            transition: all var(--transition-smooth);
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+        }
+        .social-follow-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--sage-light);
+        }
+        .social-follow-card svg {
+            width: 28px;
+            height: 28px;
+            color: var(--sage);
+        }
+        .social-follow-card .social-name {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        .social-follow-card .social-handle {
+            font-size: 0.78rem;
+            color: var(--muted-text);
+        }
+        .social-follow-card .social-cta {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--sage-dark);
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* ========== ATMOSPHERE ========== */
+        .atmosphere-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        @media (min-width: 768px) {
+            .atmosphere-grid {
+                grid-template-columns: 1.2fr 0.8fr 1fr;
+                grid-template-rows: 240px 240px;
+                gap: 14px;
+            }
+        }
+        .atmos-card {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            background: var(--sand);
+            min-height: 180px;
+            transition: all var(--transition-smooth);
+            border: 1px solid var(--border);
+        }
+        .atmos-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        .atmos-card-tall {
+            grid-row: span 2;
+        }
+        .atmos-1 {
+            background: linear-gradient(160deg, #7A8C6F 0%, #9BAF8E 40%, #B8C8A8 100%);
+        }
+        .atmos-2 {
+            background: linear-gradient(160deg, #5A4A3A 0%, #7A5C3E 50%, #9B7B5E 100%);
+        }
+        .atmos-3 {
+            background: linear-gradient(160deg, #E8DDD0 0%, #F3EDE6 50%, #FBF7F2 100%);
+        }
+        .atmos-4 {
+            background: linear-gradient(160deg, #2D2A26 0%, #4A4540 50%, #6B6560 100%);
+        }
+
+        /* ========== REVIEWS ========== */
+        .reviews-block {
+            text-align: center;
+        }
+        .reviews-big-rating {
+            font-family: var(--font-display);
+            font-size: 3.6rem;
+            font-weight: 500;
+            color: var(--charcoal);
+            line-height: 1;
+        }
+        .reviews-stars-lg {
+            font-size: 1.3rem;
+            color: var(--star-gold);
+            letter-spacing: 3px;
+        }
+        .reviews-count {
+            font-size: 0.85rem;
+            color: var(--muted-text);
+            margin-bottom: 20px;
+        }
+        .reviews-carousel {
+            display: flex;
+            gap: 14px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding-bottom: 8px;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            cursor: grab;
+            margin-bottom: 20px;
+        }
+        .reviews-carousel::-webkit-scrollbar {
+            display: none;
+        }
+        @media (min-width: 768px) {
+            .reviews-carousel {
+                justify-content: center;
+                flex-wrap: wrap;
+                overflow-x: visible;
+                cursor: default;
+                gap: 16px;
+            }
+        }
+        .review-card {
+            flex: 0 0 82vw;
+            max-width: 340px;
+            scroll-snap-align: start;
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 20px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border);
+            transition: all var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: left;
+        }
+        @media (min-width: 768px) {
+            .review-card {
+                flex: 0 0 auto;
+                max-width: 300px;
+            }
+        }
+        .review-card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+        .review-stars {
+            color: var(--star-gold);
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+        .review-text {
+            font-size: 0.9rem;
+            line-height: 1.55;
+            color: var(--charcoal-light);
+            font-style: italic;
+            flex: 1;
+        }
+        .review-author {
+            font-weight: 600;
+            font-size: 0.8rem;
+            color: var(--charcoal);
+        }
+
+        /* ========== GALLERY ========== */
+        .gallery-masonry {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+        @media (min-width: 600px) {
+            .gallery-masonry {
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 10px;
+            }
+        }
+        @media (min-width: 1024px) {
+            .gallery-masonry {
+                grid-template-columns: repeat(4, 1fr);
+                grid-auto-rows: 160px;
+                gap: 12px;
+            }
+        }
+        .gallery-item {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            background: var(--sand);
+            min-height: 120px;
+            transition: all var(--transition-smooth);
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+        .gallery-item:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-lg);
+            z-index: 2;
+            border-color: var(--border);
+        }
+        .gallery-item-tall {
+            grid-row: span 2;
+        }
+        .gallery-item-wide {
+            grid-column: span 2;
+        }
+        .gp-1 {
+            background: linear-gradient(135deg, #FBF7F2 0%, #E8DDD0 100%);
+        }
+        .gp-2 {
+            background: linear-gradient(135deg, #7A8C6F 0%, #5A6B52 100%);
+        }
+        .gp-3 {
+            background: linear-gradient(135deg, #8B7355 0%, #6B5B45 100%);
+        }
+        .gp-4 {
+            background: linear-gradient(135deg, #3D3A35 0%, #5A4A3A 100%);
+        }
+        .gp-5 {
+            background: linear-gradient(135deg, #E8DDD0 0%, #D5C4B0 100%);
+        }
+        .gp-6 {
+            background: linear-gradient(135deg, #9BAF8E 0%, #7A8C6F 100%);
+        }
+        .gp-7 {
+            background: linear-gradient(135deg, #F3EDE6 0%, #E8DDD0 100%);
+        }
+        .gp-8 {
+            background: linear-gradient(135deg, #A89074 0%, #8B7355 100%);
+        }
+
+        /* ========== VISIT SECTION ========== */
+        .visit-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 28px;
+        }
+        @media (min-width: 768px) {
+            .visit-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 44px;
+                align-items: start;
+            }
+        }
+        .visit-info {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .visit-address-block {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .visit-address-block strong {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+        }
+        .visit-phone-link {
+            font-size: 0.95rem;
+            color: var(--sage-dark);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: color var(--transition-fast);
+        }
+        .visit-phone-link:hover {
+            color: var(--sage);
+        }
+        .visit-actions-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .visit-image-card {
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            background: linear-gradient(150deg, #7A8C6F 0%, #9BAF8E 30%, #B8C8A8 60%, #D5E0CC 100%);
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            border: 1px solid var(--border);
+        }
+        .visit-image-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.12) 0%, transparent 55%);
+            pointer-events: none;
+        }
+
+        /* Opening Hours Table */
+        .hours-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+        }
+        .hours-table td {
+            padding: 6px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .hours-table td:first-child {
+            font-weight: 500;
+            color: var(--charcoal);
+            width: 40%;
+        }
+        .hours-table td:last-child {
+            text-align: right;
+            color: var(--muted-text);
+        }
+        .hours-table tr.today-row {
+            background: var(--sage-pale);
+            border-radius: var(--radius-sm);
+        }
+        .hours-table tr.today-row td {
+            font-weight: 700;
+            color: var(--sage-dark);
+            border-bottom-color: transparent;
+            padding: 7px 8px;
+        }
+        .hours-table tr.today-row td:first-child::before {
+            content: 'Today · ';
+            font-weight: 400;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        @media (max-width: 400px) {
+            .hours-table tr.today-row td:first-child::before {
+                content: 'Today ';
+            }
+        }
+
+        .hours-accordion-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--sage-dark);
+            cursor: pointer;
+            padding: 6px 0;
+            transition: color var(--transition-fast);
+            background: none;
+            border: none;
+        }
+        .hours-accordion-toggle:hover {
+            color: var(--sage);
+        }
+        .hours-accordion-toggle svg {
+            transition: transform var(--transition-smooth);
+            width: 14px;
+            height: 14px;
+        }
+        .hours-accordion-toggle.open svg {
+            transform: rotate(180deg);
+        }
+        .hours-accordion-content {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+        .hours-accordion-content.open {
+            max-height: 400px;
+        }
+
+        /* ========== FINAL CTA ========== */
+        .final-cta {
+            text-align: center;
+            padding: 70px 18px;
+            background: var(--sage-soft);
+            position: relative;
+            overflow: hidden;
+        }
+        @media (min-width: 768px) {
+            .final-cta {
+                padding: 90px 36px;
+            }
+        }
+        .final-cta-heading {
+            font-family: var(--font-display);
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            margin-bottom: 8px;
+            color: var(--charcoal);
+            position: relative;
+            z-index: 1;
+        }
+        .final-cta-sub {
+            font-size: 1rem;
+            color: var(--muted-text);
+            margin-bottom: 24px;
+            position: relative;
+            z-index: 1;
+        }
+        .final-cta-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ========== FOOTER ========== */
+        .site-footer {
+            background: var(--charcoal);
+            color: var(--cream);
+            padding: 44px 18px 28px;
+        }
+        @media (min-width: 768px) {
+            .site-footer {
+                padding: 52px 36px 32px;
+            }
+        }
+        .footer-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px;
+        }
+        @media (min-width: 768px) {
+            .footer-inner {
+                grid-template-columns: 1.4fr 1fr 1fr 1fr;
+                gap: 32px;
+            }
+        }
+        .footer-logo img {
+            height: 32px;
+            width: auto;
+            margin-bottom: 10px;
+            filter: brightness(0) invert(1);
+        }
+        .footer-address {
+            font-size: 0.82rem;
+            line-height: 1.55;
+            color: rgba(255, 255, 255, 0.65);
+        }
+        .footer-col h4 {
+            font-family: var(--font-body);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            margin-bottom: 10px;
+            color: rgba(255, 255, 255, 0.45);
+            font-weight: 600;
+        }
+        .footer-col a {
+            display: block;
+            font-size: 0.82rem;
+            padding: 4px 0;
+            color: rgba(255, 255, 255, 0.7);
+            transition: color var(--transition-fast);
+        }
+        .footer-col a:hover {
+            color: var(--white);
+        }
+        .footer-bottom {
+            max-width: var(--max-width);
+            margin: 24px auto 0;
+            padding-top: 16px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.72rem;
+            color: rgba(255, 255, 255, 0.4);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 20px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer-social-row {
+            display: flex;
+            gap: 8px;
+        }
+        .footer-social-row a {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all var(--transition-fast);
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .footer-social-row a:hover {
+            border-color: var(--white);
+            color: var(--white);
+            background: rgba(255, 255, 255, 0.06);
+        }
+        .footer-social-row svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        /* ========== MOBILE STICKY BAR ========== */
+        .mobile-sticky-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 998;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-top: 1px solid var(--border);
+            display: flex;
+            height: var(--mobile-bar-height);
+            box-shadow: 0 -2px 10px rgba(45, 42, 38, 0.04);
+        }
+        @media (min-width: 768px) {
+            .mobile-sticky-bar {
+                display: none;
+            }
+        }
+        .mobile-sticky-bar a {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--charcoal);
+            gap: 5px;
+            border-right: 1px solid var(--border);
+            text-decoration: none;
+            transition: all var(--transition-fast);
+        }
+        .mobile-sticky-bar a:last-child {
+            border-right: none;
+            background: var(--sage);
+            color: var(--white);
+        }
+        .mobile-sticky-bar a:active {
+            background: var(--sand-light);
+        }
+        .mobile-sticky-bar a:last-child:active {
+            background: var(--sage-dark);
+        }
+        .mobile-sticky-bar svg {
+            width: 14px;
+            height: 14px;
+            flex-shrink: 0;
+        }
+
+        /* ========== ANIMATIONS ========== */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s cubic-bezier(0.25, 0.1, 0.25, 1), transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .stagger-item {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.45s cubic-bezier(0.25, 0.1, 0.25, 1), transform 0.45s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+        .stagger-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-image {
+            clip-path: inset(0 100% 0 0);
+            transition: clip-path 0.7s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+        .reveal-image.visible {
+            clip-path: inset(0 0 0 0);
+        }
+
+        :focus-visible {
+            outline: 2px solid var(--sage);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+        .btn:focus-visible,
+        .menu-tab:focus-visible {
+            outline-offset: 3px;
+        }
+
+        /* Responsive fine-tuning */
+        @media (max-width: 380px) {
+            .hero-headline {
+                font-size: 1.7rem;
+            }
+            .hero-subtitle {
+                font-size: 0.85rem;
+            }
+            .top-info-bar {
+                font-size: 0.62rem;
+            }
+            .top-info-bar-inner {
+                gap: 6px;
+            }
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ========== TOP INFO BAR ========== -->
+    <div class="top-info-bar" aria-label="Key business information">
+        <div class="top-info-bar-inner">
+            <span class="top-info-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 2C8.7 2 6 4.7 6 8c0 5 6 12 6 12s6-7 6-12c0-3.3-2.7-6-6-6z"/></svg>
+                <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" target="_blank" rel="noopener noreferrer">62 Margaret St, East Toowoomba</a>
+            </span>
+            <span class="top-info-dot"></span>
+            <span class="status-indicator" id="statusIndicator">
+                <span class="status-dot" id="statusDot"></span>
+                <span id="statusText">Loading…</span>
+            </span>
+            <span class="top-info-dot"></span>
+            <span class="top-info-rating">★ 4.7</span>
+            <span class="top-info-item" style="color:rgba(255,255,255,0.6);">230 Google Reviews</span>
+            <span class="top-info-dot"></span>
+            <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" target="_blank" rel="noopener noreferrer" style="font-weight:600;">Get Directions →</a>
+        </div>
+    </div>
+
+    <!-- ========== HEADER ========== -->
+    <header class="site-header" id="siteHeader" role="banner">
+        <div class="header-inner">
+            <a href="#hero" class="logo-link" aria-label="Sage & Butler Home">
+                <img src="https://raw.githubusercontent.com/deardecoder/Sage-Butler/main/fulllogo.png" alt="Sage & Butler logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+                <svg class="logo-svg" viewBox="0 0 280 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display:none;height:36px;">
+                    <text x="0" y="42" font-family="'Playfair Display','Georgia',serif" font-size="32" font-weight="600" fill="#2D2A26" letter-spacing="-0.5">SAGE</text>
+                    <text x="118" y="42" font-family="'Playfair Display','Georgia',serif" font-size="32" font-weight="300" fill="#7A8C6F" letter-spacing="0">&amp;</text>
+                    <text x="150" y="42" font-family="'Playfair Display','Georgia',serif" font-size="32" font-weight="600" fill="#2D2A26" letter-spacing="-0.5">BUTLER</text>
+                    <path d="M258 32c-2-4-6-6-10-5-3 1-5 4-5 7 0 2 1 4 3 5l-2 8c-1 3 1 6 4 6 3-1 5-4 4-7l3-5c2-1 3-3 3-5 0-2-1-3-3-3l1-1z" fill="#7A8C6F" opacity="0.7"/>
+                </svg>
+            </a>
+
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#visit">Visit</a>
+            </nav>
+
+            <div class="header-social">
+                <a href="https://www.instagram.com/sageandbutlercafe/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+                </a>
+                <a href="https://www.facebook.com/sagebutlerneighbourhoodcafe" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                </a>
+            </div>
+
+            <a href="https://www.ubereats.com/au/store/sage-and-butler" class="btn btn-primary btn-sm header-cta" target="_blank" rel="noopener noreferrer">
+                Order Online
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+        <div class="mobile-nav-panel">
+            <a href="#hero" class="mobile-nav-link">Home</a>
+            <a href="#menu" class="mobile-nav-link">Menu</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#reviews" class="mobile-nav-link">Reviews</a>
+            <a href="#visit" class="mobile-nav-link">Visit</a>
+            <div class="mobile-social-row">
+                <a href="https://www.instagram.com/sageandbutlercafe/" target="_blank" rel="noopener noreferrer">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg>
+                    Instagram
+                </a>
+                <a href="https://www.facebook.com/sagebutlerneighbourhoodcafe" target="_blank" rel="noopener noreferrer">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                    Facebook
+                </a>
+            </div>
+            <a href="tel:+61745734883" class="mobile-nav-link" style="font-size:1rem;">📞 +61 7 4573 4883</a>
+            <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" class="mobile-nav-link" style="font-size:1rem;" target="_blank" rel="noopener noreferrer">📍 Get Directions</a>
+            <a href="https://www.ubereats.com/au/store/sage-and-butler" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Order Online →</a>
+        </div>
+    </div>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main id="main-content">
+
+        <!-- HERO -->
+        <section class="hero" id="hero" aria-labelledby="hero-headline">
+            <div class="hero-bg">
+                <div class="hero-image-inner"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-logo-reveal">
+                    <img src="https://raw.githubusercontent.com/deardecoder/Sage-Butler/main/fulllogo.png" alt="Sage & Butler" onerror="this.style.display='none';">
+                </div>
+                <h1 class="hero-headline" id="hero-headline">A neighbourhood café<br>in East Toowoomba</h1>
+                <p class="hero-subtitle">Coffee by Single O, breakfast, brunch, baked treats and warm hospitality — just around the corner on Margaret Street.</p>
+                <div class="hero-actions">
+                    <a href="https://www.ubereats.com/au/store/sage-and-butler" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        Order Online
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                    <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                        Get Directions
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 2C8.7 2 6 4.7 6 8c0 5 6 12 6 12s6-7 6-12c0-3.3-2.7-6-6-6z"/></svg>
+                    </a>
+                </div>
+                <div class="hero-meta">
+                    <span>📍 62 Margaret St, East Toowoomba</span>
+                    <span class="hero-meta-dot"></span>
+                    <span>★ 4.7 · 230 Google Reviews</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- BRAND INTRODUCTION -->
+        <section class="section section-cream" id="about" aria-labelledby="brand-heading">
+            <div class="section-inner">
+                <div class="brand-intro">
+                    <div class="brand-intro-image reveal-image" data-reveal></div>
+                    <div class="brand-intro-text animate-on-scroll" data-animate>
+                        <span class="section-label">Our Story</span>
+                        <h2 class="section-heading" id="brand-heading">Good coffee.<br>Good food.<br>Good people.</h2>
+                        <p class="brand-description">Sage & Butler is a neighbourhood café in East Toowoomba, where the coffee is always fresh, the baked goods are made in-house daily, and the atmosphere is warm and welcoming. We're proud to serve Single O coffee alongside a menu of breakfast favourites, sweet treats, and cold beverages.</p>
+                        <a href="#menu" class="btn btn-outline" style="align-self:flex-start;margin-top:4px;">
+                            Explore Our Menu
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED FOOD -->
+        <section class="section section-cream" style="padding-top:0;" aria-labelledby="featured-heading">
+            <div class="section-inner">
+                <div class="menu-section-header animate-on-scroll" data-animate>
+                    <span class="section-label">House Favourites</span>
+                    <h2 class="section-heading" id="featured-heading">What to try first</h2>
+                </div>
+                <div class="featured-grid">
+                    <div class="featured-card featured-card-large stagger-item" data-stagger>
+                        <div class="featured-card-image"><div class="featured-card-img-placeholder fc-img-1"></div></div>
+                        <div class="featured-card-info"><span class="featured-card-category">Breakfast</span><span class="featured-card-name">Avocado Toast</span><span class="featured-card-price">$27.25</span></div>
+                    </div>
+                    <div class="featured-card stagger-item" data-stagger>
+                        <div class="featured-card-image"><div class="featured-card-img-placeholder fc-img-2"></div></div>
+                        <div class="featured-card-info"><span class="featured-card-category">Sweet Treats</span><span class="featured-card-name">Carrot Cake</span><span class="featured-card-price">$10.00</span></div>
+                    </div>
+                    <div class="featured-card stagger-item" data-stagger>
+                        <div class="featured-card-image"><div class="featured-card-img-placeholder fc-img-3"></div></div>
+                        <div class="featured-card-info"><span class="featured-card-category">Hot Beverages</span><span class="featured-card-name">Flat White</span><span class="featured-card-price">$6.75</span></div>
+                    </div>
+                    <div class="featured-card stagger-item" data-stagger>
+                        <div class="featured-card-image"><div class="featured-card-img-placeholder fc-img-4"></div></div>
+                        <div class="featured-card-info"><span class="featured-card-category">Breakfast</span><span class="featured-card-name">Eggs Benedict</span><span class="featured-card-price">$30.25</span></div>
+                    </div>
+                    <div class="featured-card stagger-item" data-stagger>
+                        <div class="featured-card-image"><div class="featured-card-img-placeholder fc-img-5"></div></div>
+                        <div class="featured-card-info"><span class="featured-card-category">Cold Beverages</span><span class="featured-card-name">Iced Latte</span><span class="featured-card-price">$7.50</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENU -->
+        <section class="section section-ivory" id="menu" aria-labelledby="menu-heading">
+            <div class="section-inner">
+                <div class="menu-section-header animate-on-scroll" data-animate>
+                    <span class="section-label">Full Menu</span>
+                    <h2 class="section-heading" id="menu-heading">Everything we serve</h2>
+                    <p class="section-sub">Tap a category to browse</p>
+                </div>
+                <div class="menu-category-tabs" id="menuTabs" role="tablist">
+                    <button class="menu-tab active" data-category="breakfast" role="tab" aria-selected="true">Breakfast</button>
+                    <button class="menu-tab" data-category="sweet-treats" role="tab" aria-selected="false">Sweet Treats</button>
+                    <button class="menu-tab" data-category="hot-beverages" role="tab" aria-selected="false">Hot Beverages</button>
+                    <button class="menu-tab" data-category="cold-beverages" role="tab" aria-selected="false">Cold Beverages</button>
+                </div>
+                <div class="menu-items-grid" id="menuItemsGrid" role="tabpanel"></div>
+                <div class="menu-egg-note" id="eggNote" style="display:none;">Our dishes containing eggs reflect the current rising costs/shortages.</div>
+            </div>
+        </section>
+
+        <!-- SOCIAL FOLLOW -->
+        <section class="section section-sand" aria-labelledby="social-heading">
+            <div class="section-inner social-follow">
+                <div class="menu-section-header animate-on-scroll" data-animate>
+                    <span class="section-label">Stay Connected</span>
+                    <h2 class="section-heading" id="social-heading">Follow the Sage & Butler life</h2>
+                    <p class="section-sub">See the latest café moments, food, coffee and updates</p>
+                </div>
+                <div class="social-follow-cards">
+                    <a href="https://www.instagram.com/sageandbutlercafe/" target="_blank" rel="noopener noreferrer" class="social-follow-card stagger-item" data-stagger>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+                        <span class="social-name">Instagram</span>
+                        <span class="social-handle">@sageandbutlercafe</span>
+                        <span class="social-cta">Follow Us →</span>
+                    </a>
+                    <a href="https://www.facebook.com/sagebutlerneighbourhoodcafe" target="_blank" rel="noopener noreferrer" class="social-follow-card stagger-item" data-stagger>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                        <span class="social-name">Facebook</span>
+                        <span class="social-handle">Sage & Butler Café</span>
+                        <span class="social-cta">Follow Us →</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CAFÉ EXPERIENCE -->
+        <section class="section section-sand" style="padding-top:0;" aria-labelledby="atmos-heading">
+            <div class="section-inner">
+                <div class="menu-section-header animate-on-scroll" data-animate>
+                    <h2 class="section-heading" id="atmos-heading">Come for the coffee.<br>Stay for the atmosphere.</h2>
+                </div>
+                <div class="atmosphere-grid">
+                    <div class="atmos-card atmos-card-tall stagger-item" data-stagger><div class="atmos-1" style="width:100%;height:100%;"></div></div>
+                    <div class="atmos-card stagger-item" data-stagger><div class="atmos-2" style="width:100%;height:100%;"></div></div>
+                    <div class="atmos-card stagger-item" data-stagger><div class="atmos-3" style="width:100%;height:100%;"></div></div>
+                    <div class="atmos-card stagger-item" data-stagger><div class="atmos-4" style="width:100%;height:100%;"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REVIEWS -->
+        <section class="section section-cream" id="reviews" aria-labelledby="reviews-heading">
+            <div class="section-inner reviews-block">
+                <div class="animate-on-scroll" data-animate>
+                    <span class="section-label">Reviews</span>
+                    <div class="reviews-big-rating">4.7</div>
+                    <div class="reviews-stars-lg" aria-label="4.7 out of 5 stars">★★★★★</div>
+                    <p class="reviews-count">230 Google Reviews</p>
+                </div>
+                <div class="reviews-carousel" id="reviewsCarousel">
+                    <div class="review-card stagger-item" data-stagger>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Friendly staff, quick service, and the coffee is consistently excellent. My go-to local café in East Toowoomba."</p>
+                        <span class="review-author">— Google Review</span>
+                    </div>
+                    <div class="review-card stagger-item" data-stagger>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"The eggs benedict is honestly the best I've had. Cosy atmosphere and beautiful outdoor seating area."</p>
+                        <span class="review-author">— Google Review</span>
+                    </div>
+                    <div class="review-card stagger-item" data-stagger>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Avocado toast with hot honey is incredible! Homemade baked goods and such welcoming hospitality."</p>
+                        <span class="review-author">— Facebook Review</span>
+                    </div>
+                </div>
+                <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" class="btn btn-outline animate-on-scroll" data-animate target="_blank" rel="noopener noreferrer" style="margin-top:8px;">
+                    Read All Google Reviews →
+                </a>
+            </div>
+        </section>
+
+        <!-- PHOTO GALLERY -->
+        <section class="section section-sage" aria-labelledby="gallery-heading">
+            <div class="section-inner">
+                <div class="menu-section-header animate-on-scroll" data-animate>
+                    <span class="section-label" style="color:#5A6B52;">Photo Story</span>
+                    <h2 class="section-heading" id="gallery-heading">Moments at the café</h2>
+                </div>
+                <div class="gallery-masonry">
+                    <div class="gallery-item gallery-item-tall stagger-item" data-stagger><div class="gp-1" style="width:100%;height:100%;"></div></div>
+                    <div class="gallery-item stagger-item" data-stagger><div class="gp-2" style="width:100%;height:100%;"></div></div>
+                    <div class="gallery-item gallery-item-wide stagger-item" data-stagger><div class="gp-3" style="width:100%;height:100%;"></div></div>
+                    <div class="gallery-item stagger-item" data-stagger><div class="gp-4" style="width:100%;height:100%;"></div></div>
+                    <div class="gallery-item gallery-item-tall stagger-item" data-stagger><div class="gp-5" style="width:100%;height:100%;"></div></div>
+                    <div class="gallery-item stagger-item" data-stagger><div class="gp-6" style="width:100%;height:100%;"></div></div>
+                    <div class="gallery-item gallery-item-wide stagger-item" data-stagger><div class="gp-7" style="width:100%;height:100%;"></div></div>
+                    <div class="gallery-item stagger-item" data-stagger><div class="gp-8" style="width:100%;height:100%;"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISIT -->
+        <section class="section section-cream" id="visit" aria-labelledby="visit-heading">
+            <div class="section-inner">
+                <div class="visit-grid">
+                    <div class="visit-info animate-on-scroll" data-animate>
+                        <span class="section-label">Visit Us</span>
+                        <h2 class="section-heading" id="visit-heading">Find us on Margaret Street</h2>
+                        <div class="visit-address-block">
+                            <strong>Sage & Butler</strong><br>
+                            62 Margaret St<br>
+                            East Toowoomba QLD 4350<br>
+                            Australia
+                        </div>
+                        <a href="tel:+61745734883" class="visit-phone-link">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 014.11 2a2 2 0 012-1.72h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                            +61 7 4573 4883
+                        </a>
+
+                        <!-- Opening Hours -->
+                        <div>
+                            <p style="font-weight:600;font-size:0.9rem;margin-bottom:6px;">🕐 Opening Hours</p>
+                            <p style="font-size:0.85rem;color:var(--muted-text);margin-bottom:4px;" id="todayHoursSummary">Today: —</p>
+                            <button class="hours-accordion-toggle" id="hoursToggle" aria-expanded="false">
+                                View all hours
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </button>
+                            <div class="hours-accordion-content" id="hoursAccordionContent">
+                                <table class="hours-table" id="hoursTable">
+                                    <tbody>
+                                        <tr data-day="saturday"><td>Saturday</td><td>6:30 am – 12:00 pm</td></tr>
+                                        <tr data-day="sunday"><td>Sunday</td><td>6:30 am – 12:00 pm</td></tr>
+                                        <tr data-day="monday"><td>Monday</td><td>6:30 am – 2:00 pm</td></tr>
+                                        <tr data-day="tuesday"><td>Tuesday</td><td>6:30 am – 2:00 pm</td></tr>
+                                        <tr data-day="wednesday"><td>Wednesday</td><td>6:30 am – 2:00 pm</td></tr>
+                                        <tr data-day="thursday"><td>Thursday</td><td>6:30 am – 2:00 pm</td></tr>
+                                        <tr data-day="friday"><td>Friday</td><td>6:30 am – 2:00 pm</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="visit-actions-row">
+                            <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 2C8.7 2 6 4.7 6 8c0 5 6 12 6 12s6-7 6-12c0-3.3-2.7-6-6-6z"/></svg>
+                                Get Directions
+                            </a>
+                            <a href="tel:+61745734883" class="btn btn-outline btn-sm">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 014.11 2a2 2 0 012-1.72h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                                Call
+                            </a>
+                            <a href="https://www.ubereats.com/au/store/sage-and-butler" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                                Order Online →
+                            </a>
+                        </div>
+                        <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top:4px;">
+                            ★ Read 230 Google Reviews →
+                        </a>
+                    </div>
+                    <div class="visit-image-card reveal-image" data-reveal></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section class="final-cta" aria-labelledby="final-heading">
+            <h2 class="final-cta-heading" id="final-heading">Slow down.<br>Stay a while.</h2>
+            <p class="final-cta-sub">Your next coffee stop is waiting on Margaret Street.</p>
+            <div class="final-cta-actions">
+                <a href="https://www.ubereats.com/au/store/sage-and-butler" class="btn btn-primary" target="_blank" rel="noopener noreferrer" style="padding:13px 28px;font-size:0.95rem;">Order Online →</a>
+                <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" class="btn btn-outline" target="_blank" rel="noopener noreferrer" style="padding:13px 28px;font-size:0.95rem;">Get Directions</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-inner">
+            <div>
+                <div class="footer-logo">
+                    <img src="https://raw.githubusercontent.com/deardecoder/Sage-Butler/main/fulllogo.png" alt="Sage & Butler" onerror="this.style.display='none';">
+                </div>
+                <address class="footer-address">
+                    62 Margaret St<br>
+                    East Toowoomba QLD 4350<br>
+                    Australia<br>
+                    <a href="tel:+61745734883" style="color:rgba(255,255,255,0.65);">+61 7 4573 4883</a>
+                </address>
+            </div>
+            <div class="footer-col">
+                <h4>Browse</h4>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#visit">Visit</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="https://www.instagram.com/sageandbutlercafe/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.facebook.com/sagebutlerneighbourhoodcafe" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" target="_blank" rel="noopener noreferrer">Google Reviews</a>
+            </div>
+            <div class="footer-col">
+                <h4>Order</h4>
+                <a href="https://www.ubereats.com/au/store/sage-and-butler" target="_blank" rel="noopener noreferrer">Uber Eats</a>
+                <a href="tel:+61745734883">Call to Order</a>
+                <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" target="_blank" rel="noopener noreferrer">Get Directions</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2024 Sage & Butler. All rights reserved.</span>
+            <span style="font-style:italic;">See you at Sage & Butler.</span>
+            <div class="footer-social-row">
+                <a href="https://www.instagram.com/sageandbutlercafe/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+                </a>
+                <a href="https://www.facebook.com/sagebutlerneighbourhoodcafe" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MOBILE STICKY BAR -->
+    <nav class="mobile-sticky-bar" aria-label="Quick actions">
+        <a href="tel:+61745734883">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 014.11 2a2 2 0 012-1.72h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Call
+        </a>
+        <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 2C8.7 2 6 4.7 6 8c0 5 6 12 6 12s6-7 6-12c0-3.3-2.7-6-6-6z"/></svg>
+            Directions
+        </a>
+        <a href="https://www.ubereats.com/au/store/sage-and-butler" target="_blank" rel="noopener noreferrer">Order Online</a>
+    </nav>
+
+    <script>
+        (function() {
+            // ============ OPENING HOURS & STATUS ============
+            const openingHours = {
+                sunday: { open: [6, 30], close: [12, 0] },
+                monday: { open: [6, 30], close: [14, 0] },
+                tuesday: { open: [6, 30], close: [14, 0] },
+                wednesday: { open: [6, 30], close: [14, 0] },
+                thursday: { open: [6, 30], close: [14, 0] },
+                friday: { open: [6, 30], close: [14, 0] },
+                saturday: { open: [6, 30], close: [12, 0] },
+            };
+
+            const dayNames = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+            const dayDisplayNames = {
+                sunday: 'Sunday',
+                monday: 'Monday',
+                tuesday: 'Tuesday',
+                wednesday: 'Wednesday',
+                thursday: 'Thursday',
+                friday: 'Friday',
+                saturday: 'Saturday'
+            };
+
+            function getQueenslandTime() {
+                const now = new Date();
+                // Queensland is UTC+10, no DST
+                const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+                return new Date(utc + (10 * 3600000));
+            }
+
+            function getTodayInfo() {
+                const qldTime = getQueenslandTime();
+                const dayIndex = qldTime.getDay(); // 0=Sunday
+                const dayName = dayNames[dayIndex];
+                const hours = openingHours[dayName];
+                const currentMinutes = qldTime.getHours() * 60 + qldTime.getMinutes();
+                const openMinutes = hours.open[0] * 60 + hours.open[1];
+                const closeMinutes = hours.close[0] * 60 + hours.close[1];
+                const isOpen = currentMinutes >= openMinutes && currentMinutes < closeMinutes;
+
+                const formatTime = (h, m) => {
+                    const ampm = h >= 12 ? 'pm' : 'am';
+                    const displayH = h > 12 ? h - 12 : (h === 0 ? 12 : h);
+                    const displayM = m === 0 ? '' : ':' + m.toString().padStart(2, '0');
+                    return displayH + displayM + ampm;
+                };
+
+                return {
+                    dayName,
+                    dayDisplay: dayDisplayNames[dayName],
+                    isOpen,
+                    openStr: formatTime(hours.open[0], hours.open[1]),
+                    closeStr: formatTime(hours.close[0], hours.close[1]),
+                    hours: hours,
+                };
+            }
+
+            function updateStatusIndicator() {
+                const todayInfo = getTodayInfo();
+                const statusDot = document.getElementById('statusDot');
+                const statusText = document.getElementById('statusText');
+                const todayHoursSummary = document.getElementById('todayHoursSummary');
+
+                if (statusDot && statusText) {
+                    if (todayInfo.isOpen) {
+                        statusDot.className = 'status-dot open';
+                        statusText.textContent = 'Open now · ' + todayInfo.openStr + ' – ' + todayInfo.closeStr;
+                    } else {
+                        statusDot.className = 'status-dot closed';
+                        statusText.textContent = 'Closed · Opens ' + todayInfo.openStr + ' ' + todayInfo.dayDisplay;
+                    }
+                }
+
+                if (todayHoursSummary) {
+                    todayHoursSummary.textContent = 'Today (' + todayInfo.dayDisplay + '): ' + todayInfo.openStr +
+                        ' – ' + todayInfo.closeStr;
+                }
+
+                // Highlight today in hours table
+                const hoursTable = document.getElementById('hoursTable');
+                if (hoursTable) {
+                    const rows = hoursTable.querySelectorAll('tr');
+                    rows.forEach(row => {
+                        row.classList.remove('today-row');
+                        if (row.dataset.day === todayInfo.dayName) {
+                            row.classList.add('today-row');
+                        }
+                    });
+                }
+            }
+
+            updateStatusIndicator();
+            // Update every 60 seconds
+            setInterval(updateStatusIndicator, 60000);
+
+            // ============ HOURS ACCORDION ============
+            const hoursToggle = document.getElementById('hoursToggle');
+            const hoursContent = document.getElementById('hoursAccordionContent');
+            if (hoursToggle && hoursContent) {
+                hoursToggle.addEventListener('click', function() {
+                    const isOpen = hoursContent.classList.contains('open');
+                    if (isOpen) {
+                        hoursContent.classList.remove('open');
+                        hoursToggle.classList.remove('open');
+                        hoursToggle.setAttribute('aria-expanded', 'false');
+                        hoursToggle.innerHTML =
+                            'View all hours <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>';
+                    } else {
+                        hoursContent.classList.add('open');
+                        hoursToggle.classList.add('open');
+                        hoursToggle.setAttribute('aria-expanded', 'true');
+                        hoursToggle.innerHTML =
+                            'Hide all hours <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>';
+                    }
+                });
+            }
+
+            // ============ MENU DATA ============
+            const menuData = {
+                'breakfast': [
+                    { name: 'Acai Bowl', price: '$24.90',
+                        desc: 'Nectar Fruits Organic Acai with caramelised date ganache, seasonal berries, sticky date brownie and butterscotch sauce.',
+                        popular: true },
+                    { name: 'Bacon & Egg Burger', price: '$16.15',
+                        desc: 'Bacon & fried egg on a toasted milk bun with house-made caramelised onion relish, smoky BBQ sauce and tasty cheese.',
+                        popular: false },
+                    { name: 'Ham & Cheese Croissant', price: '$11.90',
+                        desc: 'Ham & tasty cheese on a flaky croissant served toasted.', popular: false },
+                    { name: 'Eggs Benedict Your Way', price: '$30.25',
+                        desc: '2 poached eggs, 2 rashers of bacon, spinach and hollandaise sauce on sourdough toast.',
+                    popular: true },
+                    { name: 'Bacon and Eggs', price: '$27.25', desc: 'Served on toasted sourdough.',
+                    popular: false },
+                    { name: 'Sourdough Toast', price: '$9.50',
+                        desc: 'Toasted sourdough served with butter and your choice of 1 spread.', popular: false },
+                    { name: 'Eggs on Toast', price: '$20.50', desc: 'Served on toasted sourdough.',
+                    popular: false },
+                    { name: 'House-Made Porridge', price: '$20.90',
+                        desc: 'Served warm with fresh berries, mixed berry compote and salted vanilla maple.',
+                    popular: false },
+                    { name: 'Granola Bowl', price: '$21.20',
+                        desc: 'House-made vanilla maple granola, brown butter honey ganache, citrus compote, seasonal berries and your choice of yoghurt.',
+                        popular: false },
+                    { name: 'Avocado Toast', price: '$27.25',
+                        desc: 'Crème fraîche whipped avocado, maple & herb butternut pumpkin, hot honey, feta and pepita chilli crunch.',
+                        popular: true },
+                    { name: 'Savoury Muffin', price: '$10.00',
+                        desc: 'Pumpkin, spinach & feta muffin made in house daily and served warm.', popular: false },
+                ],
+                'sweet-treats': [
+                    { name: 'Blueberry Muffin', price: '$6.00', desc: 'Baked in house every day.',
+                        popular: false },
+                    { name: 'Carrot Cake', price: '$10.00',
+                        desc: 'Sage & Butler\'s famous carrot cake with cream cheese frosting.', popular: true },
+                    { name: 'Banana Bread', price: '$10.00',
+                        desc: 'Baked in house with blueberries and topped with brown sugar & walnuts, served toasted with butter.',
+                        popular: false },
+                    { name: 'Melting Moment', price: '$4.00', desc: 'Classic melting moment made in-house.',
+                        popular: false },
+                    { name: 'Fudge Brownie', price: '$6.50', desc: 'Made in house.', popular: false },
+                    { name: 'Cinnamon Spiced Pear Muffin', price: '$6.00',
+                        desc: 'Baked in house every day.', popular: false },
+                    { name: 'Chocolate Whoopie Cookie', price: '$4.50', desc: 'Made in-house.',
+                        popular: false },
+                    { name: 'Chunky Choc Chip Cookie', price: '$6.00',
+                        desc: 'Baked in house and best served warm.', popular: false },
+                    { name: 'Raisin Toast', price: '$5.25', desc: '1 slice of thick cut fruit toast.',
+                        popular: false },
+                ],
+                'hot-beverages': [
+                    { name: 'Flat White', price: '$6.75', desc: 'Coffee by Single O.', popular: true },
+                    { name: 'Cappuccino', price: '$6.75', desc: 'Coffee by Single O.', popular: false },
+                    { name: 'Latte', price: '$6.75', desc: 'Coffee by Single O.', popular: false },
+                    { name: 'Milk Hot Chocolate', price: '$7.00', desc: 'Made with grated dairy milk chocolate.',
+                        popular: false },
+                    { name: 'Chai Latte', price: '$7.00', desc: '9 Spice & Sticky Honey Chai Leaves.',
+                    popular: false },
+                    { name: 'Matcha Latte', price: '$6.75',
+                        desc: 'Chamellia Matcha Green Tea Latte with organic panela.', popular: false },
+                    { name: 'Mocha', price: '$7.00', desc: 'Made on Guatemalan Dark Chocolate Powder.',
+                        popular: false },
+                    { name: 'Long Black', price: '$6.75', desc: 'Coffee by Single O.', popular: false },
+                    { name: 'Espresso', price: '$5.25', desc: 'Coffee by Single O.', popular: false },
+                    { name: 'Turmeric Latte', price: '$6.50',
+                        desc: 'Warm and comforting drink with a hint of turmeric.', popular: false },
+                    { name: 'Guatemalan Dark Hot Chocolate', price: '$6.75',
+                        desc: 'Organic dark chocolate.', popular: false },
+                    { name: 'Piccolo', price: '$6.00', desc: 'Coffee by Single O.', popular: false },
+                ],
+                'cold-beverages': [
+                    { name: 'Iced Latte', price: '$7.50', desc: '', popular: true },
+                    { name: 'Milk Shakes', price: '$7.75', desc: 'Thick and creamy blended treats.',
+                        popular: false },
+                    { name: 'Iced Coffee', price: '$9.50',
+                        desc: '500ml, double espresso, lightly sweetened with vanilla, served with cream and ice-cream.',
+                        popular: false },
+                    { name: 'Iced Matcha', price: '$7.25',
+                        desc: 'Iced Chamellia Matcha Green Tea Latte lightly sweetened with organic panela sugar.',
+                        popular: false },
+                    { name: 'Iced Mocha', price: '$10.00',
+                        desc: '500ml, double espresso and chocolate syrup, served with cream and ice-cream.',
+                        popular: false },
+                    { name: 'Iced Chai', price: '$8.00',
+                        desc: 'Honey 9 Spice Sticky Chai tea leaves infused with milk of your choice.',
+                    popular: false },
+                    { name: 'Iced Chocolate', price: '$9.25',
+                        desc: '500ml, chocolate syrup with cream and ice-cream.', popular: false },
+                    { name: 'Bottled Water', price: '$4.00', desc: '600ml.', popular: false },
+                    { name: 'Iced Long Black', price: '$7.25', desc: '', popular: false },
+                    { name: 'Tropical Mango Smoothie', price: '$12.90',
+                        desc: 'Mango, banana, coconut yoghurt, turmeric, lemon & Mango Nectar.', popular: false },
+                    { name: 'Super Berry Smoothie', price: '$12.90',
+                        desc: 'Mixed berries, acai, honey, coconut water.', popular: false },
+                    { name: 'Crows Nest Raspberry Lemonade', price: '$6.00', desc: '', popular: false },
+                    { name: 'Crows Nest Ginger Beer', price: '$6.00', desc: '', popular: false },
+                    { name: 'Crows Nest Lemon Lime Bitters', price: '$6.00', desc: '', popular: false },
+                    { name: 'Crows Nest Double Sarsaparilla', price: '$6.00',
+                        desc: 'A classic Australian soft drink flavour, sarsaparilla is a sweet and creamy treat.',
+                        popular: false },
+                    { name: 'Crows Nest Creaming Soda', price: '$6.00', desc: '', popular: false },
+                    { name: 'Yarra Valley Apple Blackcurrant Juice', price: '$7.50', desc: '',
+                        popular: false },
+                    { name: 'Yarra Valley Green Juice', price: '$7.50',
+                        desc: 'Blend of apple, apricot, mango and kiwi.', popular: false },
+                    { name: 'Yarra Valley Red\'y Set Go Juice', price: '$7.50',
+                        desc: 'Blend of apple, guava, blackcurrant, blueberry and strawberry.', popular: false },
+                    { name: 'Yarra Valley Orange Juice', price: '$7.50', desc: '', popular: false },
+                    { name: 'Coke Can', price: '$5.25', desc: '', popular: false },
+                    { name: 'Coke Zero Sugar Can', price: '$5.25', desc: '', popular: false },
+                    { name: 'Wild Ones Peach Iced Tea', price: '$7.00',
+                        desc: 'Fruity and refreshing iced tea infused with peach flavour.', popular: false },
+                ],
+            };
+
+            const menuGrid = document.getElementById('menuItemsGrid');
+            const eggNote = document.getElementById('eggNote');
+            const menuTabs = document.getElementById('menuTabs');
+            let currentCategory = 'breakfast';
+
+            function renderMenu(category) {
+                const items = menuData[category] || [];
+                menuGrid.innerHTML = items.map(item => `
+                    <div class="menu-item stagger-item" data-stagger>
+                        <div class="menu-item-info">
+                            <span class="menu-item-name">${item.name}${item.popular ? '<span class="menu-item-popular">Popular</span>' : ''}</span>
+                            ${item.desc ? `<p class="menu-item-desc">${item.desc}</p>` : ''}
+                        </div>
+                        <span class="menu-item-price">${item.price}</span>
+                    </div>
+                `).join('');
+                eggNote.style.display = category === 'breakfast' ? 'block' : 'none';
+                requestAnimationFrame(() => {
+                    const newItems = menuGrid.querySelectorAll('.stagger-item');
+                    newItems.forEach((el, i) => {
+                        el.style.transitionDelay = i * 0.03 + 's';
+                        el.classList.add('visible');
+                    });
+                });
+                currentCategory = category;
+            }
+
+            renderMenu('breakfast');
+
+            menuTabs.addEventListener('click', function(e) {
+                const tab = e.target.closest('.menu-tab');
+                if (!tab) return;
+                const category = tab.dataset.category;
+                if (!category || category === currentCategory) return;
+                menuTabs.querySelectorAll('.menu-tab').forEach(t => { t.classList.remove(
+                        'active');
+                    t.setAttribute('aria-selected', 'false'); });
+                tab.classList.add('active');
+                tab.setAttribute('aria-selected', 'true');
+                menuGrid.style.opacity = '0';
+                setTimeout(() => {
+                    renderMenu(category);
+                    menuGrid.style.opacity = '1';
+                }, 180);
+            });
+
+            // ============ MOBILE NAV ============
+            const hamburger = document.getElementById('hamburger');
+            const mobileNav = document.getElementById('mobileNav');
+            const mobileNavLinks = mobileNav.querySelectorAll('.mobile-nav-link');
+            let navOpen = false;
+
+            function openNav() {
+                navOpen = true;
+                hamburger.classList.add('active');
+                mobileNav.classList.add('active');
+                mobileNav.setAttribute('aria-hidden', 'false');
+                hamburger.setAttribute('aria-expanded', 'true');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeNav() {
+                navOpen = false;
+                hamburger.classList.remove('active');
+                mobileNav.classList.remove('active');
+                mobileNav.setAttribute('aria-hidden', 'true');
+                hamburger.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            }
+
+            hamburger.addEventListener('click', () => { if (navOpen) closeNav();
+                else openNav(); });
+            mobileNav.addEventListener('click', function(e) { if (e.target === mobileNav) closeNav(); });
+            mobileNavLinks.forEach(link => link.addEventListener('click', closeNav));
+            document.addEventListener('keydown', function(e) { if (e.key === 'Escape' && navOpen) closeNav(); });
+
+            // ============ HEADER SCROLL ============
+            const siteHeader = document.getElementById('siteHeader');
+
+            function updateHeader() {
+                if (window.scrollY > 40) siteHeader.classList.add('scrolled');
+                else siteHeader.classList.remove('scrolled');
+            }
+
+            // ============ SCROLL ANIMATIONS ============
+            const observerOptions = { root: null, rootMargin: '0px 0px -40px 0px', threshold: 0.08 };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        if (!entry.target.dataset.stagger) observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.animate-on-scroll, .reveal-image, .stagger-item').forEach(el => {
+                observer.observe(el);
+            });
+            document.querySelectorAll('.stagger-item').forEach((el, i) => {
+                el.style.transitionDelay = i * 0.03 + 's';
+            });
+
+            // ============ REVIEWS CAROUSEL DRAG ============
+            const carousel = document.getElementById('reviewsCarousel');
+            let isDown = false,
+                startX, scrollLeftPos;
+            carousel.addEventListener('mousedown', (e) => {
+                if (window.innerWidth >= 768) return;
+                isDown = true;
+                carousel.style.cursor = 'grabbing';
+                startX = e.pageX - carousel.offsetLeft;
+                scrollLeftPos = carousel.scrollLeft;
+            });
+            carousel.addEventListener('mouseleave', () => { isDown = false;
+                carousel.style.cursor = 'grab'; });
+            carousel.addEventListener('mouseup', () => { isDown = false;
+                carousel.style.cursor = 'grab'; });
+            carousel.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - carousel.offsetLeft;
+                const walk = (x - startX) * 2;
+                carousel.scrollLeft = scrollLeftPos - walk;
+            });
+
+            // ============ INITIAL SETUP ============
+            updateHeader();
+            window.addEventListener('scroll', updateHeader, { passive: true });
+
+            setTimeout(() => {
+                document.querySelectorAll('.animate-on-scroll, .reveal-image, .stagger-item').forEach(el => {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) el.classList.add(
+                        'visible');
+                });
+            }, 250);
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        e.preventDefault();
+                        const headerOffset = 100;
+                        const elementPosition = target.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.scrollY - headerOffset;
+                        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                    }
+                });
+            });
+
+            console.log('🌿 Sage & Butler — Website ready.');
+            console.log('📍 62 Margaret St, East Toowoomba QLD 4350');
+            console.log('☕ Coffee by Single O | 4.7 ★ | 230 Google Reviews');
+            console.log('📸 Instagram: @sageandbutlercafe | Facebook: sagebutlerneighbourhoodcafe');
+        })();
+    </script>
+</body>
+</html>
