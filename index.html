@@ -282,6 +282,7 @@
       overflow:hidden;background:#1e251d
     }
     .hero-media{position:absolute;inset:0}
+    .hero-media picture{display:block;width:100%;height:100%}
     .hero-media img{
       width:100%;height:100%;object-fit:cover;object-position:center 58%;
       filter:saturate(.92) contrast(.98)
@@ -693,8 +694,17 @@
   <main id="main">
     <section class="hero" id="top">
       <div class="hero-media">
-        <img src="https://scontent-del3-2.xx.fbcdn.net/v/t51.82787-15/719992855_18467586283105028_7235557640260120418_n.jpg?stp=dst-jpg_tt6&cstp=mx1350x1688&ctp=s1350x1688&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=C-UsPlO-hx0Q7kNvwHK53Hj&_nc_oc=Adp-YrhLs-Uc3ng7Zb-wyg9l0t3qmkanrAy536uXmCfdwZpCIaXFQtjjwWy3pSwc8EXhyDbZeOWgRQHeVp5mYlCS&_nc_zt=23&_nc_ht=scontent-del3-2.xx&_nc_gid=rWjEzTktUeFVtYolUGFxLQ&_nc_ss=7b289&oh=00_AQEQttY5BUKO1bXfV0GM6jpDpLMeLjV4wLNAsNJ6DQc-bQ&oe=6A7C8F33" alt="Sage & Butler café atmosphere" fetchpriority="high">
-      </div>
+    <picture>
+      <!-- Desktop / laptop: new supplied image -->
+      <source media="(min-width: 621px)" srcset="https://scontent-del3-1.xx.fbcdn.net/v/t39.30808-6/487510497_1223952386406317_6163512081375806614_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1351&ctp=s1080x1351&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1mOKMtHjtQAQ7kNvwE_TT4e&_nc_oc=AdqoOmH5_81xcVIQmNH6qGkl7QFypsKLEl_RdD42irFhcHL5bQ2KlGHF0VYOYaktCIPeb4cIailw4m7MP6yRly69&_nc_zt=23&_nc_ht=scontent-del3-1.xx&_nc_gid=30NSBxmkMhHOurnSh388tw&_nc_ss=7b2a8&oh=00_AQGNKo88_w77vQZx7iqhibCXrKKRcVnLrwErew16Dd42MQ&oe=6A7CB9AD">
+      <!-- Mobile: keep the existing hero image -->
+      <img
+        src="https://scontent-del3-2.xx.fbcdn.net/v/t51.82787-15/719992855_18467586283105028_7235557640260120418_n.jpg?stp=dst-jpg_tt6&cstp=mx1350x1688&ctp=s1350x1688&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=C-UsPlO-hx0Q7kNvwHK53Hj&_nc_oc=Adp-YrhLs-Uc3ng7Zb-wyg9l0t3qmkanrAy536uXmCfdwZpCIaXFQtjjwWy3pSwc8EXhyDbZeOWgRQHeVp5mYlCS&_nc_zt=23&_nc_ht=scontent-del3-2.xx&_nc_gid=rWjEzTktUeFVtYolUGFxLQ&_nc_ss=7b289&oh=00_AQEQttY5BUKO1bXfV0GM6jpDpLMeLjV4wLNAsNJ6DQc-bQ&oe=6A7C8F33"
+        alt="Sage & Butler café atmosphere"
+        fetchpriority="high"
+        decoding="async">
+    </picture>
+  </div>
       <div class="hero-badge" aria-label="4.7 rating from 230 reviews">
         <div><strong>4.7</strong><span>Google<br>Reviews</span></div>
       </div>
