@@ -1,2137 +1,991 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Sage & Butler | Café, Coffee & Breakfast in East Toowoomba</title>
-    <meta name="description" content="Discover Sage & Butler, a neighbourhood café in East Toowoomba serving coffee by Single O, breakfast, brunch, baked treats and warm hospitality. Open Mon–Fri 6:30am–2pm, Sat–Sun 6:30am–12pm. Dine-in, takeaway & delivery.">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Sage & Butler">
-    <link rel="canonical" href="https://www.sageandbutler.com.au/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#738467">
+  <meta name="description" content="Sage & Butler is a neighbourhood café in East Toowoomba serving coffee, breakfast, brunch, baked treats and more. Visit us at 62 Margaret St.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Sage & Butler">
+  <link rel="canonical" href="https://www.sageandbutler.com.au/">
+  <meta property="og:title" content="Sage & Butler | Café, Coffee & Breakfast in East Toowoomba">
+  <meta property="og:description" content="A warm neighbourhood café in East Toowoomba serving coffee, breakfast, brunch and house-made treats.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sage & Butler">
+  <meta property="og:image" content="https://raw.githubusercontent.com/deardecoder/Sage-Butler/main/fulllogo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sage & Butler | East Toowoomba Café">
+  <meta name="twitter:description" content="Coffee, breakfast, brunch and house-made treats at Sage & Butler.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/deardecoder/Sage-Butler/main/fulllogo.png">
 
-    <meta property="og:title" content="Sage & Butler | Neighbourhood Café in East Toowoomba">
-    <meta property="og:description" content="Coffee, breakfast, brunch & baked treats in East Toowoomba. Open Mon–Fri 6:30am–2pm, Sat–Sun 6:30am–12pm. Order online or visit us at 62 Margaret St.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.sageandbutler.com.au/">
-    <meta property="og:site_name" content="Sage & Butler">
-    <meta property="og:image" content="https://raw.githubusercontent.com/deardecoder/Sage-Butler/main/fulllogo.png">
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/deardecoder/Sage-Butler/main/Squarelogo.png">
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/deardecoder/Sage-Butler/main/Squarelogo.png">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sage & Butler | Neighbourhood Café in East Toowoomba">
-    <meta name="twitter:description" content="Coffee, breakfast, brunch & baked treats in East Toowoomba. Order online or visit us.">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/deardecoder/Sage-Butler/main/fulllogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/deardecoder/Sage-Butler/main/Squarelogo.png">
-    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/deardecoder/Sage-Butler/main/Squarelogo.png">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CafeOrCoffeeShop",
+    "name":"Sage & Butler",
+    "image":"https://raw.githubusercontent.com/deardecoder/Sage-Butler/main/fulllogo.png",
+    "telephone":"+61 7 4573 4883",
+    "priceRange":"$20–40",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"62 Margaret St",
+      "addressLocality":"East Toowoomba",
+      "addressRegion":"QLD",
+      "postalCode":"4350",
+      "addressCountry":"AU"
+    },
+    "sameAs":[
+      "https://www.facebook.com/sagebutlerneighbourhoodcafe",
+      "https://www.instagram.com/sageandbutlercafe/"
+    ],
+    "aggregateRating":{
+      "@type":"AggregateRating",
+      "ratingValue":"4.7",
+      "reviewCount":"230"
+    }
+  }
+  </script>
 
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "CafeOrCoffeeShop",
-            "name": "Sage & Butler",
-            "description": "A neighbourhood café in East Toowoomba serving coffee by Single O, breakfast, brunch, baked treats and warm hospitality.",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "62 Margaret St",
-                "addressLocality": "East Toowoomba",
-                "addressRegion": "QLD",
-                "postalCode": "4350",
-                "addressCountry": "AU"
-            },
-            "telephone": "+61745734883",
-            "url": "https://www.sageandbutler.com.au",
-            "sameAs": [
-                "https://www.facebook.com/sagebutlerneighbourhoodcafe",
-                "https://www.instagram.com/sageandbutlercafe/"
-            ],
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.7",
-                "reviewCount": "230",
-                "bestRating": "5"
-            },
-            "priceRange": "$$",
-            "openingHoursSpecification": [
-                { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "06:30", "closes": "14:00" },
-                { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "06:30", "closes": "12:00" }
-            ],
-            "servesCuisine": ["Café", "Australian", "Breakfast", "Brunch"]
-        }
-    </script>
+  <style>
+    :root{
+      --sage:#738467;
+      --sage-dark:#526249;
+      --sage-deep:#3e4a39;
+      --sage-soft:#dfe5d8;
+      --cream:#f7f4ec;
+      --ivory:#fbfaf6;
+      --sand:#e8dfcf;
+      --wood:#9b7b5b;
+      --charcoal:#242721;
+      --muted:#697067;
+      --line:rgba(62,74,57,.16);
+      --white:#fff;
+      --shadow:0 20px 55px rgba(37,43,32,.12);
+      --radius:22px;
+      --display:"Cormorant Garamond", Georgia, serif;
+      --body:"DM Sans", Arial, sans-serif;
+      --container:min(1180px, calc(100% - 40px));
+    }
 
-    <style>
-        :root {
-            --sage: #7A8C6F;
-            --sage-dark: #5A6B52;
-            --sage-light: #9BAF8E;
-            --sage-pale: #E8EDE3;
-            --sage-soft: #F1F5ED;
-            --cream: #FBF7F2;
-            --ivory: #FDF9F4;
-            --sand: #E8DDD0;
-            --sand-light: #F3EDE6;
-            --charcoal: #2D2A26;
-            --charcoal-light: #3D3A35;
-            --warm-brown: #8B7355;
-            --border: #DDD6CD;
-            --muted-text: #6B6560;
-            --white: #FFFFFF;
-            --star-gold: #C8983B;
-            --status-open: #5A8A5C;
-            --status-closed: #B07060;
-            --shadow-sm: 0 1px 3px rgba(45, 42, 38, 0.04);
-            --shadow-md: 0 4px 12px rgba(45, 42, 38, 0.05);
-            --shadow-lg: 0 8px 24px rgba(45, 42, 38, 0.07);
-            --radius-sm: 6px;
-            --radius-md: 12px;
-            --radius-lg: 20px;
-            --radius-xl: 28px;
-            --font-display: 'Playfair Display', 'Cormorant Garamond', 'Georgia', 'Times New Roman', serif;
-            --font-body: 'Source Sans Pro', 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
-            --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-            --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            --max-width: 1200px;
-            --header-height: 64px;
-            --topbar-height: 34px;
-            --mobile-bar-height: 50px;
-        }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--charcoal);
+      background:var(--ivory);
+      font-family:var(--body);
+      line-height:1.6;
+      overflow-x:hidden;
+    }
+    body.menu-open{overflow:hidden}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit}
+    ::selection{background:var(--sage);color:white}
 
-        @media (prefers-reduced-motion: reduce) {
-            :root {
-                --transition-fast: 0s;
-                --transition-smooth: 0s;
-            }
-            .animate-on-scroll,
-            .reveal-image,
-            .stagger-item {
-                animation: none !important;
-                opacity: 1 !important;
-                transform: none !important;
-                transition: none !important;
-            }
-        }
+    .skip-link{
+      position:fixed;left:16px;top:-60px;z-index:9999;
+      padding:10px 15px;background:var(--charcoal);color:#fff;border-radius:8px
+    }
+    .skip-link:focus{top:16px}
 
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    .announcement{
+      background:var(--sage-deep);
+      color:#f8f7f0;
+      font-size:.76rem;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+    }
+    .announcement .inner{
+      width:var(--container);
+      min-height:34px;
+      margin:auto;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:18px;
+      flex-wrap:wrap;
+      text-align:center;
+    }
+    .announcement a{border-bottom:1px solid rgba(255,255,255,.5)}
+    .dot{width:5px;height:5px;border-radius:50%;background:#dfe8d6;display:inline-block}
 
-        html {
-            scroll-behavior: smooth;
-            -webkit-text-size-adjust: 100%;
-            text-size-adjust: 100%;
-            font-size: 16px;
-        }
+    .header{
+      position:sticky;top:0;z-index:1000;
+      background:rgba(251,250,246,.92);
+      backdrop-filter:blur(16px);
+      border-bottom:1px solid transparent;
+      transition:.35s ease;
+    }
+    .header.scrolled{box-shadow:0 8px 30px rgba(38,43,34,.08);border-color:var(--line)}
+    .nav{
+      width:var(--container);
+      height:82px;
+      margin:auto;
+      display:grid;
+      grid-template-columns:1fr auto 1fr;
+      align-items:center;
+      gap:24px;
+    }
+    .brand img{width:195px;height:auto}
+    .nav-links{display:flex;justify-content:center;gap:27px;align-items:center}
+    .nav-links a{
+      font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+      color:#4f564c;position:relative;padding:8px 0
+    }
+    .nav-links a::after{
+      content:"";position:absolute;left:0;right:100%;bottom:1px;height:1px;
+      background:var(--sage);transition:right .3s ease
+    }
+    .nav-links a:hover::after,.nav-links a.active::after{right:0}
+    .nav-actions{display:flex;justify-content:flex-end;align-items:center;gap:13px}
+    .socials{display:flex;gap:8px}
+    .icon-btn{
+      width:36px;height:36px;border:1px solid var(--line);border-radius:50%;
+      display:grid;place-items:center;background:transparent;color:var(--sage-dark);
+      transition:.25s ease
+    }
+    .icon-btn:hover{background:var(--sage);color:white;transform:translateY(-2px)}
+    .icon{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .btn{
+      min-height:46px;padding:0 20px;border:1px solid transparent;border-radius:999px;
+      display:inline-flex;align-items:center;justify-content:center;gap:9px;
+      font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+      cursor:pointer;transition:transform .25s ease,box-shadow .25s ease,background .25s ease,color .25s ease
+    }
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--sage);color:white;box-shadow:0 10px 24px rgba(115,132,103,.22)}
+    .btn-primary:hover{background:var(--sage-dark);box-shadow:0 14px 30px rgba(115,132,103,.3)}
+    .btn-outline{background:transparent;color:var(--sage-dark);border-color:rgba(82,98,73,.35)}
+    .btn-outline:hover{background:var(--sage-soft)}
+    .btn-light{background:var(--cream);color:var(--sage-deep)}
+    .arrow{transition:transform .25s ease}
+    .btn:hover .arrow{transform:translateX(4px)}
+    .menu-toggle{display:none;border:0;background:none;width:44px;height:44px;padding:8px;color:var(--sage-deep)}
+    .hamburger,.hamburger:before,.hamburger:after{display:block;width:24px;height:1.5px;background:currentColor;content:"";position:relative;transition:.3s}
+    .hamburger:before{position:absolute;top:-8px}.hamburger:after{position:absolute;top:8px}
+    .menu-toggle.open .hamburger{background:transparent}.menu-toggle.open .hamburger:before{top:0;transform:rotate(45deg)}.menu-toggle.open .hamburger:after{top:0;transform:rotate(-45deg)}
 
-        body {
-            font-family: var(--font-body);
-            background-color: var(--cream);
-            color: var(--charcoal);
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            overflow-x: hidden;
-            min-height: 100vh;
-            padding-bottom: var(--mobile-bar-height);
-            padding-top: calc(var(--topbar-height) + var(--header-height));
-        }
+    .mobile-panel{
+      display:none;position:fixed;inset:0;background:rgba(247,244,236,.98);
+      z-index:999;padding:105px 24px 30px;overflow:auto
+    }
+    .mobile-panel.open{display:block;animation:panelIn .3s ease both}
+    .mobile-links{display:grid;gap:4px}
+    .mobile-links a{font-family:var(--display);font-size:2.4rem;border-bottom:1px solid var(--line);padding:13px 0;color:var(--sage-deep)}
+    .mobile-social{display:flex;gap:10px;margin-top:25px}
+    .mobile-actions{display:grid;gap:10px;margin-top:25px}
 
-        @media (min-width: 768px) {
-            body {
-                padding-bottom: 0;
-                padding-top: calc(var(--topbar-height) + var(--header-height));
-            }
-        }
+    .business-strip{background:var(--white);border-bottom:1px solid var(--line)}
+    .business-grid{
+      width:var(--container);margin:auto;min-height:64px;
+      display:grid;grid-template-columns:1.25fr .9fr .7fr auto;gap:22px;align-items:center
+    }
+    .business-item{display:flex;align-items:center;gap:10px;font-size:.78rem}
+    .business-item strong{display:block;font-size:.8rem}
+    .business-item small{display:block;color:var(--muted);font-size:.7rem}
+    .business-icon{color:var(--sage-dark);flex:0 0 auto}
+    .status{display:inline-flex;align-items:center;gap:7px;font-weight:700}
+    .status-dot{width:8px;height:8px;border-radius:50%;background:#a45b4d}
+    .status.open .status-dot{background:#6f9562;box-shadow:0 0 0 5px rgba(111,149,98,.13)}
+    .rating-mini{display:flex;align-items:center;gap:7px;white-space:nowrap}
+    .stars{letter-spacing:2px;color:var(--sage);font-size:.83rem}
 
-        ::selection {
-            background-color: var(--sage-pale);
-            color: var(--sage-dark);
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-        button {
-            cursor: pointer;
-            font-family: inherit;
-            border: none;
-            background: none;
-            color: inherit;
-        }
-        ul {
-            list-style: none;
-        }
-        h1,
-        h2,
-        h3,
-        h4 {
-            font-family: var(--font-display);
-            font-weight: 500;
-            line-height: 1.15;
-            letter-spacing: -0.01em;
-        }
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
+    .hero{
+      position:relative;min-height:calc(100svh - 180px);display:grid;align-items:end;
+      overflow:hidden;background:#1e251d
+    }
+    .hero-media{position:absolute;inset:0}
+    .hero-media img{
+      width:100%;height:100%;object-fit:cover;object-position:center 58%;
+      filter:saturate(.92) contrast(.98)
+    }
+    .hero-media::after{
+      content:"";position:absolute;inset:0;
+      background:linear-gradient(90deg,rgba(20,25,19,.72) 0%,rgba(20,25,19,.38) 43%,rgba(20,25,19,.12) 72%,rgba(20,25,19,.25) 100%),
+                 linear-gradient(0deg,rgba(18,23,18,.65),transparent 45%)
+    }
+    .hero-content{position:relative;z-index:2;width:var(--container);margin:0 auto;padding:100px 0 76px;color:white}
+    .eyebrow{
+      font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+      display:flex;align-items:center;gap:10px
+    }
+    .eyebrow:before{content:"";width:32px;height:1px;background:currentColor;opacity:.75}
+    .hero h1{
+      max-width:760px;margin:15px 0 13px;font-family:var(--display);font-weight:500;
+      font-size:clamp(4rem,8.5vw,8.3rem);line-height:.82;letter-spacing:-.035em
+    }
+    .hero-copy{max-width:520px;font-size:1.03rem;color:rgba(255,255,255,.88)}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:25px}
+    .hero .btn-outline{color:white;border-color:rgba(255,255,255,.6);background:rgba(255,255,255,.05)}
+    .hero .btn-outline:hover{background:rgba(255,255,255,.16)}
+    .hero-badge{
+      position:absolute;right:6%;top:18%;width:132px;height:132px;border-radius:50%;
+      border:1px solid rgba(255,255,255,.5);display:grid;place-items:center;text-align:center;
+      color:#fff;background:rgba(40,50,38,.23);backdrop-filter:blur(8px)
+    }
+    .hero-badge strong{display:block;font-family:var(--display);font-size:2.25rem;line-height:.8}
+    .hero-badge span{font-size:.63rem;text-transform:uppercase;letter-spacing:.1em}
+    .hero-scroll{position:absolute;right:28px;bottom:30px;z-index:2;color:white;font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;writing-mode:vertical-rl;display:flex;gap:8px;align-items:center}
+    .hero-scroll:after{content:"";height:42px;width:1px;background:rgba(255,255,255,.65)}
 
-        /* ========== TOP INFO BAR ========== */
-        .top-info-bar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1002;
-            height: var(--topbar-height);
-            background: var(--charcoal);
-            color: rgba(255, 255, 255, 0.85);
-            font-size: 0.68rem;
-            font-weight: 500;
-            letter-spacing: 0.03em;
-            display: flex;
-            align-items: center;
-        }
-        .top-info-bar-inner {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            width: 100%;
-            padding: 0 12px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            white-space: nowrap;
-            overflow-x: auto;
-            scrollbar-width: none;
-            -webkit-overflow-scrolling: touch;
-        }
-        .top-info-bar-inner::-webkit-scrollbar {
-            display: none;
-        }
-        @media (min-width: 768px) {
-            .top-info-bar-inner {
-                gap: 16px;
-                overflow-x: visible;
-                justify-content: center;
-                padding: 0 20px;
-            }
-            .top-info-bar {
-                font-size: 0.7rem;
-            }
-        }
-        .top-info-item {
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-            flex-shrink: 0;
-        }
-        .top-info-item svg {
-            width: 11px;
-            height: 11px;
-            flex-shrink: 0;
-            opacity: 0.7;
-        }
-        .top-info-dot {
-            width: 3px;
-            height: 3px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.3);
-            flex-shrink: 0;
-        }
-        .status-indicator {
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-            font-weight: 600;
-        }
-        .status-dot {
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            flex-shrink: 0;
-        }
-        .status-dot.open {
-            background: #5A8A5C;
-            box-shadow: 0 0 5px rgba(90, 138, 92, 0.5);
-        }
-        .status-dot.closed {
-            background: #B07060;
-            box-shadow: 0 0 5px rgba(176, 112, 96, 0.4);
-        }
-        .top-info-rating {
-            color: var(--star-gold);
-            font-weight: 600;
-        }
-        .top-info-bar a {
-            color: rgba(255, 255, 255, 0.8);
-            transition: color var(--transition-fast);
-            text-decoration: underline;
-            text-underline-offset: 2px;
-            text-decoration-color: transparent;
-        }
-        .top-info-bar a:hover {
-            color: #fff;
-            text-decoration-color: rgba(255, 255, 255, 0.4);
-        }
+    .section{padding:110px 0;position:relative}
+    .container{width:var(--container);margin:auto}
+    .section-sage{background:var(--sage-deep);color:#f7f5ed}
+    .section-cream{background:var(--cream)}
+    .section-head{max-width:720px;margin-bottom:48px}
+    .section-head.center{margin-left:auto;margin-right:auto;text-align:center}
+    .section-kicker{font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--sage-dark)}
+    .section-sage .section-kicker{color:#cbd5c2}
+    .section-title{font-family:var(--display);font-weight:500;font-size:clamp(3rem,6vw,5.8rem);line-height:.88;letter-spacing:-.025em;margin:11px 0 18px}
+    .section-intro{max-width:650px;color:var(--muted)}
+    .section-sage .section-intro{color:rgba(247,245,237,.72)}
 
-        /* ========== HEADER ========== */
-        .site-header {
-            position: fixed;
-            top: var(--topbar-height);
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            height: var(--header-height);
-            background: rgba(251, 247, 242, 0.94);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
-            border-bottom: 1px solid var(--border);
-            display: flex;
-            align-items: center;
-            padding: 0 12px;
-            transition: box-shadow var(--transition-smooth);
-        }
-        .site-header.scrolled {
-            box-shadow: var(--shadow-sm);
-        }
-        @media (min-width: 768px) {
-            .site-header {
-                padding: 0 20px;
-            }
-        }
-        .header-inner {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 10px;
-        }
-        .logo-link {
-            flex-shrink: 0;
-            display: flex;
-            align-items: center;
-            z-index: 1001;
-        }
-        .logo-link img {
-            height: 32px;
-            width: auto;
-        }
-        @media (max-width: 374px) {
-            .logo-link img {
-                height: 26px;
-            }
-        }
-        @media (min-width: 768px) {
-            .logo-link img {
-                height: 38px;
-            }
-        }
+    .intro-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:center}
+    .intro-statement{font-family:var(--display);font-size:clamp(2.5rem,5vw,5.1rem);line-height:.92;color:var(--sage-deep)}
+    .intro-text{font-size:1rem;color:var(--muted);max-width:600px}
+    .leaf-divider{display:flex;align-items:center;gap:13px;color:var(--sage);margin:25px 0}
+    .leaf-divider span{height:1px;width:52px;background:currentColor}
+    .leaf-divider svg{width:28px;height:28px}
 
-        .desktop-nav {
-            display: none;
-            align-items: center;
-            gap: 20px;
-        }
-        @media (min-width: 1024px) {
-            .desktop-nav {
-                display: flex;
-            }
-        }
-        .desktop-nav a {
-            font-size: 0.75rem;
-            font-weight: 500;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-            color: var(--charcoal);
-            padding: 4px 0;
-            position: relative;
-            transition: color var(--transition-fast);
-        }
-        .desktop-nav a::after {
-            content: '';
-            position: absolute;
-            bottom: -1px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--sage);
-            border-radius: 1px;
-            transition: width var(--transition-smooth);
-        }
-        .desktop-nav a:hover::after,
-        .desktop-nav a:focus-visible::after {
-            width: 100%;
-        }
-        .desktop-nav a:hover {
-            color: var(--sage-dark);
-        }
+    .photo-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:20px;align-items:stretch}
+    .photo-card{position:relative;overflow:hidden;border-radius:var(--radius);min-height:570px;background:#ddd}
+    .photo-card.small{min-height:275px}
+    .photo-card img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.65,.25,1)}
+    .photo-card:hover img{transform:scale(1.045)}
+    .photo-stack{display:grid;grid-template-rows:1fr 1fr;gap:20px}
+    .photo-caption{position:absolute;left:20px;right:20px;bottom:20px;color:white;z-index:2}
+    .photo-caption span{font-size:.65rem;letter-spacing:.14em;text-transform:uppercase}
+    .photo-caption h3{font-family:var(--display);font-size:2.1rem;font-weight:500;margin:3px 0}
+    .photo-card:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.62));pointer-events:none}
 
-        .header-social {
-            display: none;
-            align-items: center;
-            gap: 4px;
-        }
-        @media (min-width: 1024px) {
-            .header-social {
-                display: flex;
-            }
-        }
-        .header-social a {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--muted-text);
-            transition: all var(--transition-fast);
-            border: 1px solid transparent;
-        }
-        .header-social a:hover {
-            color: var(--sage-dark);
-            background: var(--sage-pale);
-            border-color: var(--border);
-        }
-        .header-social svg {
-            width: 14px;
-            height: 14px;
-        }
+    .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .feature-card{background:var(--white);border:1px solid var(--line);overflow:hidden;border-radius:var(--radius);transition:.35s ease}
+    .feature-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+    .feature-image{height:330px;overflow:hidden}
+    .feature-image img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+    .feature-card:hover .feature-image img{transform:scale(1.05)}
+    .feature-info{padding:22px}
+    .feature-meta{display:flex;justify-content:space-between;gap:12px;color:var(--sage-dark);font-size:.7rem;text-transform:uppercase;letter-spacing:.08em}
+    .feature-info h3{font-family:var(--display);font-size:2.15rem;font-weight:500;line-height:.95;margin:9px 0}
+    .feature-info p{font-size:.84rem;color:var(--muted);margin:0}
 
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 9px 18px;
-            border-radius: 50px;
-            font-family: var(--font-body);
-            font-weight: 600;
-            font-size: 0.8rem;
-            letter-spacing: 0.02em;
-            transition: all var(--transition-smooth);
-            white-space: nowrap;
-            cursor: pointer;
-            border: 2px solid transparent;
-            text-align: center;
-            justify-content: center;
-        }
-        .btn-primary {
-            background: var(--sage);
-            color: var(--white);
-            border-color: var(--sage);
-        }
-        .btn-primary:hover,
-        .btn-primary:focus-visible {
-            background: var(--sage-dark);
-            border-color: var(--sage-dark);
-            transform: translateY(-1px);
-            box-shadow: var(--shadow-md);
-        }
-        .btn-outline {
-            background: transparent;
-            color: var(--charcoal);
-            border-color: var(--border);
-        }
-        .btn-outline:hover,
-        .btn-outline:focus-visible {
-            background: var(--white);
-            border-color: var(--charcoal);
-            transform: translateY(-1px);
-            box-shadow: var(--shadow-sm);
-        }
-        .btn-sm {
-            padding: 7px 13px;
-            font-size: 0.73rem;
-            border-radius: 40px;
-        }
-        .btn-arrow {
-            transition: transform var(--transition-fast);
-        }
-        .btn:hover .btn-arrow,
-        .btn:focus-visible .btn-arrow {
-            transform: translateX(2px);
-        }
-        .header-cta {
-            display: none;
-        }
-        @media (min-width: 768px) {
-            .header-cta {
-                display: inline-flex;
-            }
-        }
+    .menu-shell{display:grid;grid-template-columns:210px 1fr;gap:60px}
+    .menu-tabs{position:sticky;top:104px;height:max-content;display:grid;gap:4px}
+    .menu-tab{
+      border:0;border-left:2px solid transparent;background:transparent;text-align:left;
+      padding:11px 15px;color:var(--muted);cursor:pointer;font-size:.78rem;font-weight:700;
+      text-transform:uppercase;letter-spacing:.09em;transition:.25s
+    }
+    .menu-tab:hover,.menu-tab.active{color:var(--sage-dark);border-color:var(--sage);background:rgba(115,132,103,.06)}
+    .menu-category{display:none}
+    .menu-category.active{display:block;animation:fadeUp .45s ease both}
+    .menu-list{border-top:1px solid var(--line)}
+    .menu-row{display:grid;grid-template-columns:1fr auto;gap:20px;padding:21px 0;border-bottom:1px solid var(--line)}
+    .menu-row h4{font-family:var(--display);font-size:1.7rem;font-weight:500;line-height:1;margin:0 0 5px}
+    .menu-row p{margin:0;max-width:650px;color:var(--muted);font-size:.8rem}
+    .menu-price{font-weight:700;color:var(--sage-dark);white-space:nowrap}
+    .menu-note{background:var(--sage-soft);padding:13px 15px;margin:0 0 22px;font-size:.75rem;color:var(--sage-deep);border-left:2px solid var(--sage)}
 
-        .hamburger {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 36px;
-            height: 36px;
-            z-index: 1001;
-            border-radius: 50%;
-            flex-shrink: 0;
-        }
-        @media (min-width: 1024px) {
-            .hamburger {
-                display: none;
-            }
-        }
-        .hamburger-line {
-            position: relative;
-            width: 18px;
-            height: 2px;
-            background: var(--charcoal);
-            border-radius: 2px;
-            transition: all var(--transition-smooth);
-        }
-        .hamburger-line::before,
-        .hamburger-line::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            width: 18px;
-            height: 2px;
-            background: var(--charcoal);
-            border-radius: 2px;
-            transition: all var(--transition-smooth);
-        }
-        .hamburger-line::before {
-            top: -5px;
-        }
-        .hamburger-line::after {
-            top: 5px;
-        }
-        .hamburger.active .hamburger-line {
-            background: transparent;
-        }
-        .hamburger.active .hamburger-line::before {
-            top: 0;
-            transform: rotate(45deg);
-        }
-        .hamburger.active .hamburger-line::after {
-            top: 0;
-            transform: rotate(-45deg);
-        }
+    .reviews-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}
+    .rating-big{font-family:var(--display);font-size:8rem;line-height:.72;color:#f4f1e7}
+    .rating-stars{font-size:1.05rem;letter-spacing:5px;color:#dfe8d7;margin:22px 0 8px}
+    .review-count{font-size:.75rem;letter-spacing:.13em;text-transform:uppercase;color:#cdd6c6}
+    .review-list{display:grid;gap:16px}
+    .review-card{padding:25px 26px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);border-radius:18px}
+    .review-card blockquote{font-family:var(--display);font-size:1.8rem;line-height:1.05;margin:0 0 17px;color:#faf8f0}
+    .review-card footer{font-size:.72rem;color:#cbd4c4}
+    .review-actions{margin-top:25px}
 
-        /* Mobile Nav */
-        .mobile-nav {
-            position: fixed;
-            inset: 0;
-            z-index: 999;
-            background: rgba(45, 42, 38, 0.4);
-            backdrop-filter: blur(2px);
-            -webkit-backdrop-filter: blur(2px);
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity var(--transition-smooth);
-        }
-        .mobile-nav.active {
-            opacity: 1;
-            pointer-events: auto;
-        }
-        .mobile-nav-panel {
-            background: var(--cream);
-            width: min(80vw, 340px);
-            height: 100%;
-            padding: 80px 24px 32px;
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
-            transform: translateX(100%);
-            transition: transform 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
-            overflow-y: auto;
-            box-shadow: var(--shadow-lg);
-        }
-        .mobile-nav.active .mobile-nav-panel {
-            transform: translateX(0);
-        }
-        .mobile-nav a {
-            font-family: var(--font-display);
-            font-size: 1.3rem;
-            padding: 10px 0;
-            color: var(--charcoal);
-            border-bottom: 1px solid var(--border);
-            display: block;
-            transition: color var(--transition-fast), padding-left var(--transition-fast);
-        }
-        .mobile-nav a:hover {
-            color: var(--sage-dark);
-            padding-left: 6px;
-        }
-        .mobile-nav .mobile-social-row {
-            display: flex;
-            gap: 8px;
-            margin-top: 14px;
-            padding-top: 10px;
-            border-top: 1px solid var(--border);
-        }
-        .mobile-nav .mobile-social-row a {
-            font-family: var(--font-body);
-            font-size: 0.8rem;
-            border-bottom: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-            padding: 7px 12px;
-            border-radius: 50px;
-            border: 1px solid var(--border);
-            transition: all var(--transition-fast);
-        }
-        .mobile-nav .mobile-social-row a:hover {
-            background: var(--sage-pale);
-            border-color: var(--sage);
-            padding-left: 12px;
-        }
-        .mobile-nav .btn-primary {
-            margin-top: 14px;
-            font-family: var(--font-body);
-            font-size: 0.9rem;
-            width: 100%;
-            justify-content: center;
-        }
+    .social-section{background:var(--ivory)}
+    .social-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:35px}
+    .social-links-large{display:flex;gap:10px;flex-wrap:wrap}
+    .social-photo-grid{display:grid;grid-template-columns:1.4fr .8fr .8fr;gap:14px}
+    .social-photo{height:380px;overflow:hidden;border-radius:18px;background:#ddd}
+    .social-photo:nth-child(2),.social-photo:nth-child(3){height:380px}
+    .social-photo img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+    .social-photo:hover img{transform:scale(1.05)}
 
-        /* ========== HERO ========== */
-        .hero {
-            min-height: 70vh;
-            min-height: 65dvh;
-            display: flex;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-            background: var(--charcoal);
-        }
-        @media (min-width: 768px) {
-            .hero {
-                min-height: 75vh;
-                min-height: 70dvh;
-            }
-        }
-        .hero-bg {
-            position: absolute;
-            inset: 0;
-            z-index: 0;
-        }
-        .hero-image-inner {
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(160deg, #3D3A35 0%, #2D2A26 30%, #5A6B52 70%, #7A8C6F 100%);
-            position: relative;
-            overflow: hidden;
-            animation: heroImageReveal 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-        }
-        @keyframes heroImageReveal {
-            from {
-                transform: scale(1.04);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-        .hero-image-inner::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(ellipse at center, transparent 30%, rgba(45, 42, 38, 0.45) 100%);
-            z-index: 1;
-        }
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 36px 16px;
-            width: 100%;
-            color: var(--white);
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 14px;
-        }
-        @media (min-width: 768px) {
-            .hero-content {
-                padding: 48px 32px;
-                gap: 18px;
-            }
-        }
-        @keyframes fadeRise {
-            from {
-                opacity: 0;
-                transform: translateY(16px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        .hero-logo-reveal {
-            opacity: 0;
-            animation: fadeRise 0.6s 0.2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-        }
-        .hero-logo-reveal img {
-            height: 40px;
-            width: auto;
-            filter: brightness(0) invert(1);
-        }
-        @media (min-width: 768px) {
-            .hero-logo-reveal img {
-                height: 46px;
-            }
-        }
-        .hero-headline {
-            font-family: var(--font-display);
-            font-size: clamp(1.7rem, 4vw, 3.2rem);
-            font-weight: 500;
-            line-height: 1.1;
-            letter-spacing: -0.02em;
-            max-width: 600px;
-            opacity: 0;
-            animation: fadeRise 0.6s 0.4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-        }
-        .hero-subtitle {
-            font-size: clamp(0.88rem, 1.5vw, 1rem);
-            max-width: 440px;
-            color: rgba(255, 255, 255, 0.8);
-            opacity: 0;
-            animation: fadeRise 0.6s 0.55s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-        }
-        .hero-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            opacity: 0;
-            animation: fadeRise 0.6s 0.7s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-        }
-        .hero-actions .btn {
-            font-size: 0.85rem;
-            padding: 10px 20px;
-        }
-        .hero-actions .btn-outline {
-            border-color: rgba(255, 255, 255, 0.4);
-            color: var(--white);
-        }
-        .hero-actions .btn-outline:hover {
-            border-color: var(--white);
-            background: rgba(255, 255, 255, 0.08);
-        }
-        .hero-meta {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 8px;
-            font-size: 0.78rem;
-            color: rgba(255, 255, 255, 0.7);
-            opacity: 0;
-            animation: fadeRise 0.6s 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-        }
-        .hero-meta svg {
-            width: 12px;
-            height: 12px;
-            opacity: 0.7;
-        }
-        .hero-meta-dot {
-            width: 3px;
-            height: 3px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.3);
-        }
+    .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+    .visit-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:38px}
+    .visit-card h3{font-family:var(--display);font-size:3rem;font-weight:500;line-height:.9;margin:8px 0 18px}
+    .address{font-size:.95rem;color:var(--muted);margin-bottom:20px}
+    .contact-line{display:flex;gap:10px;align-items:flex-start;margin:11px 0;font-size:.84rem}
+    .hours{display:grid;grid-template-columns:1fr auto;border-top:1px solid var(--line);margin-top:25px}
+    .hours-row{display:contents}
+    .hours-row span{padding:10px 0;border-bottom:1px solid var(--line);font-size:.8rem}
+    .hours-row.today span{color:var(--sage-dark);font-weight:700;background:rgba(115,132,103,.06)}
+    .map-card{
+      min-height:100%;border-radius:var(--radius);overflow:hidden;position:relative;
+      background:
+        radial-gradient(circle at 20% 20%,rgba(115,132,103,.18),transparent 30%),
+        linear-gradient(135deg,#dfe4d8,#f0eadc 52%,#cfd7c9)
+    }
+    .map-card:before{
+      content:"";position:absolute;inset:0;opacity:.3;
+      background-image:linear-gradient(30deg,transparent 48%,rgba(62,74,57,.18) 49%,transparent 51%),
+                       linear-gradient(120deg,transparent 48%,rgba(62,74,57,.14) 49%,transparent 51%);
+      background-size:90px 90px,120px 120px;
+    }
+    .map-card-content{position:relative;z-index:2;padding:38px;height:100%;display:flex;flex-direction:column;justify-content:space-between}
+    .map-pin{width:52px;height:52px;border-radius:50%;background:var(--sage);color:white;display:grid;place-items:center;box-shadow:0 15px 30px rgba(54,68,49,.22)}
+    .map-card h3{font-family:var(--display);font-size:3.4rem;line-height:.9;font-weight:500;margin:20px 0 10px;color:var(--sage-deep)}
+    .map-card p{max-width:330px;color:#556052;font-size:.84rem}
 
-        /* ========== SECTIONS ========== */
-        .section {
-            padding: 48px 14px;
-            position: relative;
-            overflow: hidden;
-        }
-        @media (min-width: 768px) {
-            .section {
-                padding: 72px 28px;
-            }
-        }
-        @media (min-width: 1200px) {
-            .section {
-                padding: 88px 32px;
-            }
-        }
-        .section-inner {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            width: 100%;
-        }
-        .section-dark {
-            background: var(--charcoal);
-            color: var(--cream);
-        }
-        .section-sage {
-            background: var(--sage-soft);
-        }
-        .section-cream {
-            background: var(--cream);
-        }
-        .section-ivory {
-            background: var(--ivory);
-        }
-        .section-sand {
-            background: var(--sand-light);
-        }
+    .final-cta{padding:120px 0;background:var(--sage);color:white;position:relative;overflow:hidden}
+    .final-cta:before,.final-cta:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.18);border-radius:50%}
+    .final-cta:before{width:500px;height:500px;right:-180px;top:-260px}
+    .final-cta:after{width:380px;height:380px;left:-190px;bottom:-260px}
+    .final-content{position:relative;z-index:2;text-align:center;max-width:850px;margin:auto}
+    .final-content h2{font-family:var(--display);font-weight:500;font-size:clamp(3.7rem,7vw,7rem);line-height:.82;margin:12px 0 25px}
+    .final-content p{max-width:580px;margin:0 auto 25px;color:rgba(255,255,255,.78)}
+    .final-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:10px}
 
-        .section-label {
-            font-family: var(--font-body);
-            font-size: 0.68rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--sage-dark);
-            font-weight: 600;
-            display: block;
-            margin-bottom: 4px;
-        }
-        .section-heading {
-            font-size: clamp(1.6rem, 3vw, 2.2rem);
-            font-weight: 500;
-            letter-spacing: -0.01em;
-            margin-bottom: 6px;
-        }
-        .section-sub {
-            color: var(--muted-text);
-            font-size: 0.9rem;
-            max-width: 480px;
-        }
+    footer{background:#20251f;color:#f5f2e9;padding:60px 0 25px}
+    .footer-grid{width:var(--container);margin:auto;display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:60px}
+    footer .brand img{width:230px;filter:brightness(0) invert(1);opacity:.94}
+    .footer-copy{color:rgba(245,242,233,.62);max-width:380px;font-size:.8rem;margin:18px 0}
+    .footer-title{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:#bdc9b4;font-weight:700;margin-bottom:15px}
+    .footer-links{display:grid;gap:8px}
+    .footer-links a{font-size:.8rem;color:rgba(245,242,233,.78)}
+    .footer-links a:hover{color:white}
+    .footer-bottom{width:var(--container);margin:45px auto 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;gap:20px;font-size:.68rem;color:rgba(245,242,233,.48)}
 
-        /* ========== BRAND INTRO ========== */
-        .brand-intro {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 28px;
-            align-items: center;
-        }
-        @media (min-width: 768px) {
-            .brand-intro {
-                grid-template-columns: 1fr 1fr;
-                gap: 44px;
-            }
-        }
-        .brand-intro-image {
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-            aspect-ratio: 4/5;
-            background: linear-gradient(150deg, var(--sand-light) 0%, var(--sand) 60%, var(--warm-brown) 100%);
-            position: relative;
-        }
-        .brand-intro-image::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(circle at 30% 40%, rgba(255, 255, 255, 0.06) 0%, transparent 60%);
-            pointer-events: none;
-        }
-        .brand-intro-text {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .brand-description {
-            font-size: 0.95rem;
-            line-height: 1.6;
-            color: var(--muted-text);
-            max-width: 440px;
-        }
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+    .reveal.visible{opacity:1;transform:none}
+    .stagger>*{opacity:0;transform:translateY(18px)}
+    .stagger.visible>*{animation:fadeUp .65s ease forwards}
+    .stagger.visible>*:nth-child(2){animation-delay:.08s}
+    .stagger.visible>*:nth-child(3){animation-delay:.16s}
+    .stagger.visible>*:nth-child(4){animation-delay:.24s}
+    .stagger.visible>*:nth-child(5){animation-delay:.32s}
+    @keyframes fadeUp{to{opacity:1;transform:none}}
+    @keyframes panelIn{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:none}}
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+      .reveal{opacity:1;transform:none}
+      .stagger>*{opacity:1;transform:none}
+    }
 
-        /* ========== FEATURED FOOD ========== */
-        .featured-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-        @media (min-width: 768px) {
-            .featured-grid {
-                grid-template-columns: 2fr 1fr 1fr;
-                grid-template-rows: 220px 220px;
-                gap: 14px;
-            }
-        }
-        .featured-card {
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-            position: relative;
-            background: var(--white);
-            box-shadow: var(--shadow-sm);
-            transition: all var(--transition-smooth);
-            cursor: pointer;
-            display: flex;
-            flex-direction: column;
-            border: 1px solid var(--border);
-        }
-        .featured-card:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-lg);
-        }
-        .featured-card-large {
-            grid-row: span 2;
-        }
-        .featured-card-image {
-            flex: 1;
-            min-height: 120px;
-            overflow: hidden;
-        }
-        .featured-card-large .featured-card-image {
-            min-height: 220px;
-        }
-        /* Soft brand-aligned placeholder colors */
-        .fc-img-1 { background: linear-gradient(135deg, var(--cream) 0%, var(--sand) 100%); }
-        .fc-img-2 { background: linear-gradient(135deg, var(--sage-dark) 0%, var(--sage) 100%); }
-        .fc-img-3 { background: linear-gradient(135deg, var(--ivory) 0%, var(--sand-light) 100%); }
-        .fc-img-4 { background: linear-gradient(135deg, var(--warm-brown) 0%, var(--charcoal) 100%); }
-        .fc-img-5 { background: linear-gradient(135deg, var(--sage-light) 0%, var(--sage) 100%); }
+    @media(max-width:980px){
+      :root{--container:min(100% - 32px,760px)}
+      .nav{grid-template-columns:1fr auto;height:70px}
+      .nav-links,.nav-actions .socials{display:none}
+      .nav-actions{gap:8px}
+      .nav-actions .btn{display:none}
+      .menu-toggle{display:block}
+      .business-grid{grid-template-columns:1fr 1fr;min-height:auto;padding:12px 0}
+      .business-grid .business-item:last-child{display:none}
+      .hero{min-height:760px}
+      .hero-content{padding:80px 0 55px}
+      .hero-badge{right:5%;top:14%;width:110px;height:110px}
+      .intro-grid,.reviews-grid,.visit-grid{grid-template-columns:1fr;gap:42px}
+      .menu-shell{grid-template-columns:1fr;gap:20px}
+      .menu-tabs{position:sticky;top:70px;z-index:20;display:flex;overflow-x:auto;padding:7px 0;background:rgba(251,250,246,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+      .menu-tab{white-space:nowrap;border-left:0;border-bottom:2px solid transparent;padding:9px 12px}
+      .menu-tab.active{border-bottom-color:var(--sage);background:transparent}
+      .feature-grid{grid-template-columns:1fr 1fr}
+      .social-photo-grid{grid-template-columns:1fr 1fr}
+      .social-photo:first-child{grid-column:1/-1}
+      .footer-grid{grid-template-columns:1fr 1fr}
+      .footer-grid .footer-main{grid-column:1/-1}
+    }
 
-        .featured-card-img-placeholder {
-            width: 100%;
-            height: 100%;
-            transition: transform 0.45s cubic-bezier(0.25, 0.1, 0.25, 1);
-        }
-        .featured-card:hover .featured-card-img-placeholder {
-            transform: scale(1.03);
-        }
-        .featured-card-info {
-            padding: 10px 14px;
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
-            background: var(--white);
-        }
-        .featured-card-category {
-            font-size: 0.62rem;
-            text-transform: uppercase;
-            letter-spacing: 0.07em;
-            color: var(--sage-dark);
-            font-weight: 600;
-        }
-        .featured-card-name {
-            font-family: var(--font-display);
-            font-size: 1rem;
-            font-weight: 500;
-        }
-        .featured-card-price {
-            font-weight: 600;
-            color: var(--sage-dark);
-            font-size: 0.8rem;
-        }
-
-        /* ========== MENU ========== */
-        .menu-section-header {
-            text-align: center;
-            margin-bottom: 28px;
-        }
-        .menu-category-tabs {
-            display: flex;
-            gap: 4px;
-            overflow-x: auto;
-            padding-bottom: 4px;
-            margin-bottom: 20px;
-            scroll-snap-type: x proximity;
-            -webkit-overflow-scrolling: touch;
-            scrollbar-width: none;
-            justify-content: flex-start;
-        }
-        .menu-category-tabs::-webkit-scrollbar {
-            display: none;
-        }
-        @media (min-width: 768px) {
-            .menu-category-tabs {
-                justify-content: center;
-                overflow-x: visible;
-                gap: 6px;
-            }
-        }
-        .menu-tab {
-            flex-shrink: 0;
-            padding: 7px 14px;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 0.74rem;
-            letter-spacing: 0.03em;
-            border: 1.5px solid var(--border);
-            background: var(--white);
-            color: var(--muted-text);
-            transition: all var(--transition-smooth);
-            scroll-snap-align: start;
-            cursor: pointer;
-            white-space: nowrap;
-        }
-        .menu-tab:hover {
-            border-color: var(--sage);
-            color: var(--sage-dark);
-        }
-        .menu-tab.active {
-            background: var(--sage);
-            color: var(--white);
-            border-color: var(--sage);
-        }
-        .menu-items-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 5px;
-            transition: opacity var(--transition-fast);
-        }
-        @media (min-width: 600px) {
-            .menu-items-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 7px;
-            }
-        }
-        @media (min-width: 1100px) {
-            .menu-items-grid {
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-        }
-        .menu-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 8px;
-            padding: 12px 14px;
-            border-radius: var(--radius-md);
-            background: var(--white);
-            border: 1px solid transparent;
-            transition: all var(--transition-smooth);
-            cursor: default;
-        }
-        .menu-item:hover {
-            border-color: var(--border);
-            box-shadow: var(--shadow-sm);
-        }
-        .menu-item-info {
-            flex: 1;
-            min-width: 0;
-        }
-        .menu-item-name {
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-bottom: 1px;
-        }
-        .menu-item-desc {
-            font-size: 0.72rem;
-            color: var(--muted-text);
-            line-height: 1.3;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-        .menu-item-price {
-            font-weight: 700;
-            font-size: 0.85rem;
-            color: var(--sage-dark);
-            white-space: nowrap;
-            flex-shrink: 0;
-        }
-        .menu-item-popular {
-            display: inline-block;
-            font-size: 0.58rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: var(--warm-brown);
-            font-weight: 600;
-            margin-left: 4px;
-            padding: 1px 6px;
-            background: #FDF3E4;
-            border-radius: 20px;
-        }
-        .menu-egg-note {
-            margin-top: 12px;
-            padding: 9px 14px;
-            background: #FFF9F0;
-            border-radius: var(--radius-md);
-            font-size: 0.72rem;
-            color: var(--warm-brown);
-            font-style: italic;
-            text-align: center;
-            border: 1px solid #F0E4D0;
-        }
-
-        /* ========== SOCIAL FOLLOW SECTION ========== */
-        .social-follow {
-            text-align: center;
-        }
-        .social-follow-cards {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            max-width: 440px;
-            margin: 0 auto;
-        }
-        @media (min-width: 600px) {
-            .social-follow-cards {
-                gap: 14px;
-            }
-        }
-        .social-follow-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-            padding: 24px 12px;
-            border-radius: var(--radius-lg);
-            background: var(--white);
-            border: 1px solid var(--border);
-            transition: all var(--transition-smooth);
-            text-align: center;
-            box-shadow: var(--shadow-sm);
-        }
-        .social-follow-card:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-            border-color: var(--sage-light);
-        }
-        .social-follow-card svg {
-            width: 24px;
-            height: 24px;
-            color: var(--sage);
-        }
-        .social-follow-card .social-name {
-            font-family: var(--font-display);
-            font-size: 1rem;
-            font-weight: 500;
-        }
-        .social-follow-card .social-handle {
-            font-size: 0.72rem;
-            color: var(--muted-text);
-        }
-        .social-follow-card .social-cta {
-            font-size: 0.7rem;
-            font-weight: 600;
-            color: var(--sage-dark);
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            display: inline-flex;
-            align-items: center;
-            gap: 3px;
-        }
-
-        /* ========== ATMOSPHERE ========== */
-        .atmosphere-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 8px;
-        }
-        @media (min-width: 768px) {
-            .atmosphere-grid {
-                grid-template-columns: 1.2fr 0.8fr 1fr;
-                grid-template-rows: 200px 200px;
-                gap: 12px;
-            }
-        }
-        .atmos-card {
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-            background: var(--sand);
-            min-height: 150px;
-            transition: all var(--transition-smooth);
-            border: 1px solid var(--border);
-        }
-        .atmos-card:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-        }
-        .atmos-card-tall {
-            grid-row: span 2;
-        }
-        .atmos-1 { background: linear-gradient(160deg, var(--sage) 0%, var(--sage-light) 100%); }
-        .atmos-2 { background: linear-gradient(160deg, var(--warm-brown) 0%, var(--charcoal-light) 100%); }
-        .atmos-3 { background: linear-gradient(160deg, var(--sand) 0%, var(--cream) 100%); }
-        .atmos-4 { background: linear-gradient(160deg, var(--charcoal) 0%, var(--charcoal-light) 100%); }
-
-        /* ========== REVIEWS ========== */
-        .reviews-block {
-            text-align: center;
-        }
-        .reviews-big-rating {
-            font-family: var(--font-display);
-            font-size: 3rem;
-            font-weight: 500;
-            color: var(--charcoal);
-            line-height: 1;
-        }
-        .reviews-stars-lg {
-            font-size: 1.2rem;
-            color: var(--star-gold);
-            letter-spacing: 3px;
-        }
-        .reviews-count {
-            font-size: 0.8rem;
-            color: var(--muted-text);
-            margin-bottom: 18px;
-        }
-        .reviews-carousel {
-            display: flex;
-            gap: 12px;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            padding-bottom: 6px;
-            -webkit-overflow-scrolling: touch;
-            scrollbar-width: none;
-            cursor: grab;
-            margin-bottom: 18px;
-        }
-        .reviews-carousel::-webkit-scrollbar {
-            display: none;
-        }
-        @media (min-width: 768px) {
-            .reviews-carousel {
-                justify-content: center;
-                flex-wrap: wrap;
-                overflow-x: visible;
-                cursor: default;
-                gap: 14px;
-            }
-        }
-        .review-card {
-            flex: 0 0 80vw;
-            max-width: 300px;
-            scroll-snap-align: start;
-            background: var(--white);
-            border-radius: var(--radius-lg);
-            padding: 18px;
-            box-shadow: var(--shadow-sm);
-            border: 1px solid var(--border);
-            transition: all var(--transition-smooth);
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            text-align: left;
-        }
-        @media (min-width: 768px) {
-            .review-card {
-                flex: 0 0 auto;
-                max-width: 280px;
-            }
-        }
-        .review-card:hover {
-            box-shadow: var(--shadow-md);
-            transform: translateY(-2px);
-        }
-        .review-stars {
-            color: var(--star-gold);
-            font-size: 0.85rem;
-            letter-spacing: 1px;
-        }
-        .review-text {
-            font-size: 0.85rem;
-            line-height: 1.5;
-            color: var(--charcoal-light);
-            font-style: italic;
-            flex: 1;
-        }
-        .review-author {
-            font-weight: 600;
-            font-size: 0.75rem;
-            color: var(--charcoal);
-        }
-
-        /* ========== GALLERY ========== */
-        .gallery-masonry {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 6px;
-        }
-        @media (min-width: 600px) {
-            .gallery-masonry {
-                grid-template-columns: 1fr 1fr 1fr;
-                gap: 8px;
-            }
-        }
-        @media (min-width: 1024px) {
-            .gallery-masonry {
-                grid-template-columns: repeat(4, 1fr);
-                grid-auto-rows: 140px;
-                gap: 10px;
-            }
-        }
-        .gallery-item {
-            border-radius: var(--radius-md);
-            overflow: hidden;
-            background: var(--sand);
-            min-height: 100px;
-            transition: all var(--transition-smooth);
-            cursor: pointer;
-            border: 1px solid transparent;
-        }
-        .gallery-item:hover {
-            transform: scale(1.02);
-            box-shadow: var(--shadow-lg);
-            z-index: 2;
-            border-color: var(--border);
-        }
-        .gallery-item-tall { grid-row: span 2; }
-        .gallery-item-wide { grid-column: span 2; }
-        .gp-1 { background: linear-gradient(135deg, var(--cream) 0%, var(--sand) 100%); }
-        .gp-2 { background: linear-gradient(135deg, var(--sage) 0%, var(--sage-dark) 100%); }
-        .gp-3 { background: linear-gradient(135deg, var(--warm-brown) 0%, var(--charcoal-light) 100%); }
-        .gp-4 { background: linear-gradient(135deg, var(--charcoal) 0%, #1f1d1b 100%); }
-        .gp-5 { background: linear-gradient(135deg, var(--sand-light) 0%, var(--sand) 100%); }
-        .gp-6 { background: linear-gradient(135deg, var(--sage-light) 0%, var(--sage) 100%); }
-        .gp-7 { background: linear-gradient(135deg, var(--ivory) 0%, var(--cream) 100%); }
-        .gp-8 { background: linear-gradient(135deg, var(--warm-brown) 0%, var(--sage-dark) 100%); }
-
-        /* ========== VISIT SECTION ========== */
-        .visit-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 24px;
-        }
-        @media (min-width: 768px) {
-            .visit-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 40px;
-                align-items: start;
-            }
-        }
-        .visit-info {
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-        }
-        .visit-address-block {
-            font-size: 0.95rem;
-            line-height: 1.55;
-        }
-        .visit-address-block strong {
-            font-family: var(--font-display);
-            font-size: 1.15rem;
-        }
-        .visit-phone-link {
-            font-size: 0.9rem;
-            color: var(--sage-dark);
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-            transition: color var(--transition-fast);
-        }
-        .visit-phone-link:hover {
-            color: var(--sage);
-        }
-        .visit-actions-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 7px;
-        }
-        .visit-image-card {
-            border-radius: var(--radius-xl);
-            overflow: hidden;
-            aspect-ratio: 4/3;
-            background: linear-gradient(150deg, var(--sage) 0%, var(--sage-light) 30%, var(--cream) 100%);
-            box-shadow: var(--shadow-lg);
-            position: relative;
-            border: 1px solid var(--border);
-        }
-        .visit-image-card::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 55%);
-            pointer-events: none;
-        }
-
-        /* Opening Hours */
-        .hours-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.8rem;
-        }
-        .hours-table td {
-            padding: 5px 0;
-            border-bottom: 1px solid var(--border);
-        }
-        .hours-table td:first-child {
-            font-weight: 500;
-            color: var(--charcoal);
-            width: 40%;
-        }
-        .hours-table td:last-child {
-            text-align: right;
-            color: var(--muted-text);
-        }
-        .hours-table tr.today-row {
-            background: var(--sage-pale);
-        }
-        .hours-table tr.today-row td {
-            font-weight: 700;
-            color: var(--sage-dark);
-            border-bottom-color: transparent;
-            padding: 6px 8px;
-        }
-        .hours-table tr.today-row td:first-child::before {
-            content: 'Today · ';
-            font-weight: 400;
-            font-size: 0.65rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .hours-accordion-toggle {
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-            font-weight: 600;
-            font-size: 0.8rem;
-            color: var(--sage-dark);
-            cursor: pointer;
-            padding: 5px 0;
-            transition: color var(--transition-fast);
-        }
-        .hours-accordion-toggle:hover {
-            color: var(--sage);
-        }
-        .hours-accordion-toggle svg {
-            transition: transform var(--transition-smooth);
-            width: 13px;
-            height: 13px;
-        }
-        .hours-accordion-toggle.open svg {
-            transform: rotate(180deg);
-        }
-        .hours-accordion-content {
-            overflow: hidden;
-            max-height: 0;
-            transition: max-height 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
-        }
-        .hours-accordion-content.open {
-            max-height: 380px;
-        }
-
-        /* ========== FINAL CTA ========== */
-        .final-cta {
-            text-align: center;
-            padding: 60px 14px;
-            background: var(--sage-soft);
-            position: relative;
-            overflow: hidden;
-        }
-        @media (min-width: 768px) {
-            .final-cta {
-                padding: 80px 28px;
-            }
-        }
-        .final-cta-heading {
-            font-family: var(--font-display);
-            font-size: clamp(1.7rem, 3.5vw, 2.5rem);
-            margin-bottom: 6px;
-            color: var(--charcoal);
-            position: relative;
-            z-index: 1;
-        }
-        .final-cta-sub {
-            font-size: 0.95rem;
-            color: var(--muted-text);
-            margin-bottom: 22px;
-            position: relative;
-            z-index: 1;
-        }
-        .final-cta-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 9px;
-            justify-content: center;
-            position: relative;
-            z-index: 1;
-        }
-
-        /* ========== FOOTER ========== */
-        .site-footer {
-            background: var(--charcoal);
-            color: var(--cream);
-            padding: 40px 14px 24px;
-        }
-        @media (min-width: 768px) {
-            .site-footer {
-                padding: 48px 28px 28px;
-            }
-        }
-        .footer-inner {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 24px;
-        }
-        @media (min-width: 768px) {
-            .footer-inner {
-                grid-template-columns: 1.4fr 1fr 1fr 1fr;
-                gap: 28px;
-            }
-        }
-        .footer-logo img {
-            height: 28px;
-            width: auto;
-            margin-bottom: 8px;
-            filter: brightness(0) invert(1);
-        }
-        .footer-address {
-            font-size: 0.78rem;
-            line-height: 1.5;
-            color: rgba(255, 255, 255, 0.6);
-        }
-        .footer-col h4 {
-            font-family: var(--font-body);
-            font-size: 0.68rem;
-            text-transform: uppercase;
-            letter-spacing: 0.07em;
-            margin-bottom: 8px;
-            color: rgba(255, 255, 255, 0.4);
-            font-weight: 600;
-        }
-        .footer-col a {
-            display: block;
-            font-size: 0.78rem;
-            padding: 3px 0;
-            color: rgba(255, 255, 255, 0.65);
-            transition: color var(--transition-fast);
-        }
-        .footer-col a:hover {
-            color: var(--white);
-        }
-        .footer-bottom {
-            max-width: var(--max-width);
-            margin: 20px auto 0;
-            padding-top: 14px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.68rem;
-            color: rgba(255, 255, 255, 0.35);
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px 18px;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .footer-social-row {
-            display: flex;
-            gap: 6px;
-        }
-        .footer-social-row a {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all var(--transition-fast);
-            color: rgba(255, 255, 255, 0.55);
-        }
-        .footer-social-row a:hover {
-            border-color: var(--white);
-            color: var(--white);
-            background: rgba(255, 255, 255, 0.05);
-        }
-        .footer-social-row svg {
-            width: 13px;
-            height: 13px;
-        }
-
-        /* ========== MOBILE STICKY BAR ========== */
-        .mobile-sticky-bar {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 998;
-            background: rgba(255, 255, 255, 0.96);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
-            border-top: 1px solid var(--border);
-            display: flex;
-            height: var(--mobile-bar-height);
-            box-shadow: 0 -2px 8px rgba(45, 42, 38, 0.03);
-            padding-bottom: env(safe-area-inset-bottom, 0);
-        }
-        @media (min-width: 768px) {
-            .mobile-sticky-bar {
-                display: none;
-            }
-        }
-        .mobile-sticky-bar a {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.66rem;
-            font-weight: 600;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            color: var(--charcoal);
-            gap: 4px;
-            border-right: 1px solid var(--border);
-            text-decoration: none;
-            transition: all var(--transition-fast);
-        }
-        .mobile-sticky-bar a:last-child {
-            border-right: none;
-            background: var(--sage);
-            color: var(--white);
-        }
-        .mobile-sticky-bar a:active {
-            background: var(--sand-light);
-        }
-        .mobile-sticky-bar a:last-child:active {
-            background: var(--sage-dark);
-        }
-        .mobile-sticky-bar svg {
-            width: 13px;
-            height: 13px;
-            flex-shrink: 0;
-        }
-
-        /* ========== ANIMATIONS ========== */
-        .animate-on-scroll {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.55s cubic-bezier(0.25, 0.1, 0.25, 1), transform 0.55s cubic-bezier(0.25, 0.1, 0.25, 1);
-        }
-        .animate-on-scroll.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .stagger-item {
-            opacity: 0;
-            transform: translateY(14px);
-            transition: opacity 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
-        }
-        .stagger-item.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .reveal-image {
-            clip-path: inset(0 100% 0 0);
-            transition: clip-path 0.65s cubic-bezier(0.25, 0.1, 0.25, 1);
-        }
-        .reveal-image.visible {
-            clip-path: inset(0 0 0 0);
-        }
-
-        :focus-visible {
-            outline: 2px solid var(--sage);
-            outline-offset: 2px;
-            border-radius: 2px;
-        }
-        .btn:focus-visible,
-        .menu-tab:focus-visible {
-            outline-offset: 3px;
-        }
-
-        /* Additional mobile tweaks */
-        @media (max-width: 380px) {
-            .hero-headline {
-                font-size: 1.5rem;
-            }
-            .hero-subtitle {
-                font-size: 0.8rem;
-            }
-            .top-info-bar {
-                font-size: 0.6rem;
-            }
-            .top-info-bar-inner {
-                gap: 5px;
-            }
-        }
-    </style>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+    @media(max-width:620px){
+      :root{--container:calc(100% - 28px)}
+      .announcement .inner{min-height:38px;font-size:.65rem;gap:8px}
+      .brand img{width:160px}
+      .business-grid{grid-template-columns:1fr}
+      .business-grid .business-item:last-child{display:flex}
+      .business-grid .business-item:nth-child(3){display:flex}
+      .business-grid{gap:8px}
+      .business-item{font-size:.7rem}
+      .business-item small{font-size:.65rem}
+      .hero{min-height:720px}
+      .hero-media img{object-position:63% center}
+      .hero-media:after{background:linear-gradient(90deg,rgba(18,24,18,.68),rgba(18,24,18,.26)),linear-gradient(0deg,rgba(18,23,18,.76),transparent 52%)}
+      .hero h1{font-size:clamp(3.6rem,18vw,5.8rem)}
+      .hero-copy{font-size:.9rem}
+      .hero-badge{top:15%;right:3%;width:96px;height:96px}
+      .hero-badge strong{font-size:1.8rem}
+      .hero-badge span{font-size:.52rem}
+      .hero-scroll{display:none}
+      .section{padding:75px 0}
+      .section-title{font-size:3.5rem}
+      .intro-statement{font-size:3.2rem}
+      .photo-grid{grid-template-columns:1fr}
+      .photo-card{min-height:450px}
+      .photo-stack{grid-template-rows:260px 260px}
+      .feature-grid{grid-template-columns:1fr}
+      .feature-image{height:310px}
+      .menu-row{grid-template-columns:1fr auto;gap:10px}
+      .menu-row h4{font-size:1.55rem}
+      .menu-row p{font-size:.76rem}
+      .reviews-grid{gap:35px}
+      .rating-big{font-size:6.2rem}
+      .review-card blockquote{font-size:1.55rem}
+      .social-head{display:block}
+      .social-links-large{margin-top:20px}
+      .social-photo-grid{grid-template-columns:1fr 1fr}
+      .social-photo,.social-photo:nth-child(2),.social-photo:nth-child(3){height:230px}
+      .social-photo:first-child{grid-column:1/-1;height:330px}
+      .visit-card{padding:26px}
+      .visit-card h3,.map-card h3{font-size:2.8rem}
+      .map-card{min-height:400px}
+      .map-card-content{padding:28px}
+      .final-cta{padding:90px 0}
+      .footer-grid{grid-template-columns:1fr;gap:35px}
+      .footer-grid .footer-main{grid-column:auto}
+      .footer-bottom{display:block}
+      .footer-bottom span{display:block;margin-top:7px}
+      body{padding-bottom:74px}
+      .mobile-sticky{
+        display:grid!important;
+        position:fixed;left:0;right:0;bottom:0;z-index:1001;
+        grid-template-columns:1fr 1fr 1.35fr;
+        padding:8px max(10px, env(safe-area-inset-left)) max(8px, env(safe-area-inset-bottom));
+        background:rgba(251,250,246,.97);backdrop-filter:blur(15px);
+        border-top:1px solid var(--line);box-shadow:0 -10px 30px rgba(30,35,27,.09)
+      }
+      .mobile-sticky a{display:flex;align-items:center;justify-content:center;gap:5px;min-height:49px;font-size:.61rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+      .mobile-sticky a+ a{border-left:1px solid var(--line)}
+      .mobile-sticky .order{background:var(--sage);color:white;border-radius:12px;margin-left:5px}
+    }
+    .mobile-sticky{display:none}
+  </style>
 </head>
+
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- ========== TOP INFO BAR ========== -->
-    <div class="top-info-bar" aria-label="Key business information">
-        <div class="top-info-bar-inner">
-            <span class="top-info-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 2C8.7 2 6 4.7 6 8c0 5 6 12 6 12s6-7 6-12c0-3.3-2.7-6-6-6z"/></svg>
-                <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" target="_blank" rel="noopener noreferrer">62 Margaret St, East Toowoomba</a>
-            </span>
-            <span class="top-info-dot"></span>
-            <span class="status-indicator" id="statusIndicator">
-                <span class="status-dot" id="statusDot"></span>
-                <span id="statusText">Loading…</span>
-            </span>
-            <span class="top-info-dot"></span>
-            <span class="top-info-rating">★ 4.7</span>
-            <span class="top-info-item" style="color:rgba(255,255,255,0.55);">230 Google Reviews</span>
-            <span class="top-info-dot"></span>
-            <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" target="_blank" rel="noopener noreferrer" style="font-weight:600;">Directions →</a>
-        </div>
+  <div class="announcement">
+    <div class="inner">
+      <span>Neighbourhood café · East Toowoomba</span>
+      <span class="dot"></span>
+      <a href="https://www.instagram.com/sageandbutlercafe/" target="_blank" rel="noopener">Follow on Instagram</a>
+      <span class="dot"></span>
+      <a href="https://www.facebook.com/sagebutlerneighbourhoodcafe" target="_blank" rel="noopener">Follow on Facebook</a>
     </div>
+  </div>
 
-    <!-- ========== HEADER ========== -->
-    <header class="site-header" id="siteHeader" role="banner">
-        <div class="header-inner">
-            <a href="#hero" class="logo-link" aria-label="Sage & Butler Home">
-                <img src="https://raw.githubusercontent.com/deardecoder/Sage-Butler/main/fulllogo.png" alt="Sage & Butler logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
-                <svg class="logo-svg" viewBox="0 0 280 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display:none;height:36px;">
-                    <text x="0" y="42" font-family="'Playfair Display','Georgia',serif" font-size="32" font-weight="600" fill="#2D2A26" letter-spacing="-0.5">SAGE</text>
-                    <text x="118" y="42" font-family="'Playfair Display','Georgia',serif" font-size="32" font-weight="300" fill="#7A8C6F" letter-spacing="0">&amp;</text>
-                    <text x="150" y="42" font-family="'Playfair Display','Georgia',serif" font-size="32" font-weight="600" fill="#2D2A26" letter-spacing="-0.5">BUTLER</text>
-                    <path d="M258 32c-2-4-6-6-10-5-3 1-5 4-5 7 0 2 1 4 3 5l-2 8c-1 3 1 6 4 6 3-1 5-4 4-7l3-5c2-1 3-3 3-5 0-2-1-3-3-3l1-1z" fill="#7A8C6F" opacity="0.7"/>
-                </svg>
-            </a>
+  <header class="header" id="header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Sage & Butler home">
+        <img src="https://raw.githubusercontent.com/deardecoder/Sage-Butler/main/fulllogo.png" alt="Sage & Butler">
+      </a>
 
-            <nav class="desktop-nav" aria-label="Main navigation">
-                <a href="#menu">Menu</a>
-                <a href="#about">About</a>
-                <a href="#reviews">Reviews</a>
-                <a href="#visit">Visit</a>
-            </nav>
+      <div class="nav-links">
+        <a href="#menu">Menu</a>
+        <a href="#experience">Experience</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit</a>
+      </div>
 
-            <div class="header-social">
-                <a href="https://www.instagram.com/sageandbutlercafe/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1"/></svg>
-                </a>
-                <a href="https://www.facebook.com/sagebutlerneighbourhoodcafe" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-                </a>
-            </div>
-
-            <a href="https://www.ubereats.com/au/store/sage-and-butler" class="btn btn-primary btn-sm header-cta" target="_blank" rel="noopener noreferrer">
-                Order Online
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </a>
-
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-                <span class="hamburger-line"></span>
-            </button>
+      <div class="nav-actions">
+        <div class="socials" aria-label="Social media">
+          <a class="icon-btn" href="https://www.instagram.com/sageandbutlercafe/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".7" fill="currentColor"/></svg>
+          </a>
+          <a class="icon-btn" href="https://www.facebook.com/sagebutlerneighbourhoodcafe" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M14 8h3V4.7A14 14 0 0 0 14.2 4C10.9 4 9 6 9 9.6V12H6v3h3v5h3v-5h3l.5-3H12V10c0-1.2.4-2 2-2Z"/></svg>
+          </a>
         </div>
-    </header>
-
-    <!-- Mobile Navigation -->
-    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
-        <div class="mobile-nav-panel">
-            <a href="#hero" class="mobile-nav-link">Home</a>
-            <a href="#menu" class="mobile-nav-link">Menu</a>
-            <a href="#about" class="mobile-nav-link">About</a>
-            <a href="#reviews" class="mobile-nav-link">Reviews</a>
-            <a href="#visit" class="mobile-nav-link">Visit</a>
-            <div class="mobile-social-row">
-                <a href="https://www.instagram.com/sageandbutlercafe/" target="_blank" rel="noopener noreferrer">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg>
-                    Instagram
-                </a>
-                <a href="https://www.facebook.com/sagebutlerneighbourhoodcafe" target="_blank" rel="noopener noreferrer">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-                    Facebook
-                </a>
-            </div>
-            <a href="tel:+61745734883" class="mobile-nav-link" style="font-size:0.95rem;">📞 +61 7 4573 4883</a>
-            <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" class="mobile-nav-link" style="font-size:0.95rem;" target="_blank" rel="noopener noreferrer">📍 Get Directions</a>
-            <a href="https://www.ubereats.com/au/store/sage-and-butler" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Order Online →</a>
-        </div>
-    </div>
-
-    <!-- ========== MAIN CONTENT ========== -->
-    <main id="main-content">
-
-        <!-- HERO -->
-        <section class="hero" id="hero" aria-labelledby="hero-headline">
-            <div class="hero-bg"><div class="hero-image-inner"></div></div>
-            <div class="hero-content">
-                <div class="hero-logo-reveal">
-                    <img src="https://raw.githubusercontent.com/deardecoder/Sage-Butler/main/fulllogo.png" alt="Sage & Butler" onerror="this.style.display='none';">
-                </div>
-                <h1 class="hero-headline" id="hero-headline">A neighbourhood café<br>in East Toowoomba</h1>
-                <p class="hero-subtitle">Coffee by Single O, breakfast, brunch, baked treats and warm hospitality — just around the corner on Margaret Street.</p>
-                <div class="hero-actions">
-                    <a href="https://www.ubereats.com/au/store/sage-and-butler" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Order Online <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-                    <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Get Directions</a>
-                </div>
-                <div class="hero-meta">
-                    <span>📍 62 Margaret St, East Toowoomba</span>
-                    <span class="hero-meta-dot"></span>
-                    <span>★ 4.7 · 230 Google Reviews</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- BRAND INTRODUCTION -->
-        <section class="section section-cream" id="about" aria-labelledby="brand-heading">
-            <div class="section-inner">
-                <div class="brand-intro">
-                    <div class="brand-intro-image reveal-image" data-reveal></div>
-                    <div class="brand-intro-text animate-on-scroll" data-animate>
-                        <span class="section-label">Our Story</span>
-                        <h2 class="section-heading" id="brand-heading">Good coffee.<br>Good food.<br>Good people.</h2>
-                        <p class="brand-description">Sage & Butler is a neighbourhood café in East Toowoomba, where the coffee is always fresh, the baked goods are made in-house daily, and the atmosphere is warm and welcoming. We're proud to serve Single O coffee alongside a menu of breakfast favourites, sweet treats, and cold beverages.</p>
-                        <a href="#menu" class="btn btn-outline" style="align-self:flex-start;margin-top:2px;">Explore Our Menu →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FEATURED FOOD -->
-        <section class="section section-cream" style="padding-top:0;" aria-labelledby="featured-heading">
-            <div class="section-inner">
-                <div class="menu-section-header animate-on-scroll" data-animate>
-                    <span class="section-label">House Favourites</span>
-                    <h2 class="section-heading" id="featured-heading">What to try first</h2>
-                </div>
-                <div class="featured-grid">
-                    <div class="featured-card featured-card-large stagger-item" data-stagger>
-                        <div class="featured-card-image"><div class="featured-card-img-placeholder fc-img-1"></div></div>
-                        <div class="featured-card-info"><span class="featured-card-category">Breakfast</span><span class="featured-card-name">Avocado Toast</span><span class="featured-card-price">$27.25</span></div>
-                    </div>
-                    <div class="featured-card stagger-item" data-stagger>
-                        <div class="featured-card-image"><div class="featured-card-img-placeholder fc-img-2"></div></div>
-                        <div class="featured-card-info"><span class="featured-card-category">Sweet Treats</span><span class="featured-card-name">Carrot Cake</span><span class="featured-card-price">$10.00</span></div>
-                    </div>
-                    <div class="featured-card stagger-item" data-stagger>
-                        <div class="featured-card-image"><div class="featured-card-img-placeholder fc-img-3"></div></div>
-                        <div class="featured-card-info"><span class="featured-card-category">Hot Beverages</span><span class="featured-card-name">Flat White</span><span class="featured-card-price">$6.75</span></div>
-                    </div>
-                    <div class="featured-card stagger-item" data-stagger>
-                        <div class="featured-card-image"><div class="featured-card-img-placeholder fc-img-4"></div></div>
-                        <div class="featured-card-info"><span class="featured-card-category">Breakfast</span><span class="featured-card-name">Eggs Benedict</span><span class="featured-card-price">$30.25</span></div>
-                    </div>
-                    <div class="featured-card stagger-item" data-stagger>
-                        <div class="featured-card-image"><div class="featured-card-img-placeholder fc-img-5"></div></div>
-                        <div class="featured-card-info"><span class="featured-card-category">Cold Beverages</span><span class="featured-card-name">Iced Latte</span><span class="featured-card-price">$7.50</span></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- MENU -->
-        <section class="section section-ivory" id="menu" aria-labelledby="menu-heading">
-            <div class="section-inner">
-                <div class="menu-section-header animate-on-scroll" data-animate>
-                    <span class="section-label">Full Menu</span>
-                    <h2 class="section-heading" id="menu-heading">Everything we serve</h2>
-                    <p class="section-sub">Tap a category to browse</p>
-                </div>
-                <div class="menu-category-tabs" id="menuTabs" role="tablist">
-                    <button class="menu-tab active" data-category="breakfast" role="tab" aria-selected="true">Breakfast</button>
-                    <button class="menu-tab" data-category="sweet-treats" role="tab" aria-selected="false">Sweet Treats</button>
-                    <button class="menu-tab" data-category="hot-beverages" role="tab" aria-selected="false">Hot Beverages</button>
-                    <button class="menu-tab" data-category="cold-beverages" role="tab" aria-selected="false">Cold Beverages</button>
-                </div>
-                <div class="menu-items-grid" id="menuItemsGrid" role="tabpanel"></div>
-                <div class="menu-egg-note" id="eggNote" style="display:none;">Our dishes containing eggs reflect the current rising costs/shortages.</div>
-            </div>
-        </section>
-
-        <!-- SOCIAL FOLLOW -->
-        <section class="section section-sand" aria-labelledby="social-heading">
-            <div class="section-inner social-follow">
-                <div class="menu-section-header animate-on-scroll" data-animate>
-                    <span class="section-label">Stay Connected</span>
-                    <h2 class="section-heading" id="social-heading">Follow the Sage & Butler life</h2>
-                    <p class="section-sub">See the latest café moments, food, coffee and updates</p>
-                </div>
-                <div class="social-follow-cards">
-                    <a href="https://www.instagram.com/sageandbutlercafe/" target="_blank" rel="noopener noreferrer" class="social-follow-card stagger-item" data-stagger>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1"/></svg>
-                        <span class="social-name">Instagram</span>
-                        <span class="social-handle">@sageandbutlercafe</span>
-                        <span class="social-cta">Follow Us →</span>
-                    </a>
-                    <a href="https://www.facebook.com/sagebutlerneighbourhoodcafe" target="_blank" rel="noopener noreferrer" class="social-follow-card stagger-item" data-stagger>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-                        <span class="social-name">Facebook</span>
-                        <span class="social-handle">Sage & Butler Café</span>
-                        <span class="social-cta">Follow Us →</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- CAFÉ EXPERIENCE -->
-        <section class="section section-sand" style="padding-top:0;" aria-labelledby="atmos-heading">
-            <div class="section-inner">
-                <div class="menu-section-header animate-on-scroll" data-animate>
-                    <h2 class="section-heading" id="atmos-heading">Come for the coffee.<br>Stay for the atmosphere.</h2>
-                </div>
-                <div class="atmosphere-grid">
-                    <div class="atmos-card atmos-card-tall stagger-item" data-stagger><div class="atmos-1" style="width:100%;height:100%;"></div></div>
-                    <div class="atmos-card stagger-item" data-stagger><div class="atmos-2" style="width:100%;height:100%;"></div></div>
-                    <div class="atmos-card stagger-item" data-stagger><div class="atmos-3" style="width:100%;height:100%;"></div></div>
-                    <div class="atmos-card stagger-item" data-stagger><div class="atmos-4" style="width:100%;height:100%;"></div></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- REVIEWS -->
-        <section class="section section-cream" id="reviews" aria-labelledby="reviews-heading">
-            <div class="section-inner reviews-block">
-                <div class="animate-on-scroll" data-animate>
-                    <span class="section-label">Reviews</span>
-                    <div class="reviews-big-rating">4.7</div>
-                    <div class="reviews-stars-lg" aria-label="4.7 out of 5 stars">★★★★★</div>
-                    <p class="reviews-count">230 Google Reviews</p>
-                </div>
-                <div class="reviews-carousel" id="reviewsCarousel">
-                    <div class="review-card stagger-item" data-stagger><div class="review-stars">★★★★★</div><p class="review-text">"Friendly staff, quick service, and the coffee is consistently excellent. My go-to local café in East Toowoomba."</p><span class="review-author">— Google Review</span></div>
-                    <div class="review-card stagger-item" data-stagger><div class="review-stars">★★★★★</div><p class="review-text">"The eggs benedict is honestly the best I've had. Cosy atmosphere and beautiful outdoor seating area."</p><span class="review-author">— Google Review</span></div>
-                    <div class="review-card stagger-item" data-stagger><div class="review-stars">★★★★★</div><p class="review-text">"Avocado toast with hot honey is incredible! Homemade baked goods and such welcoming hospitality."</p><span class="review-author">— Facebook Review</span></div>
-                </div>
-                <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" class="btn btn-outline animate-on-scroll" data-animate target="_blank" rel="noopener noreferrer">Read All Google Reviews →</a>
-            </div>
-        </section>
-
-        <!-- PHOTO GALLERY -->
-        <section class="section section-sage" aria-labelledby="gallery-heading">
-            <div class="section-inner">
-                <div class="menu-section-header animate-on-scroll" data-animate><span class="section-label" style="color:#5A6B52;">Photo Story</span><h2 class="section-heading" id="gallery-heading">Moments at the café</h2></div>
-                <div class="gallery-masonry">
-                    <div class="gallery-item gallery-item-tall stagger-item" data-stagger><div class="gp-1" style="width:100%;height:100%;"></div></div>
-                    <div class="gallery-item stagger-item" data-stagger><div class="gp-2" style="width:100%;height:100%;"></div></div>
-                    <div class="gallery-item gallery-item-wide stagger-item" data-stagger><div class="gp-3" style="width:100%;height:100%;"></div></div>
-                    <div class="gallery-item stagger-item" data-stagger><div class="gp-4" style="width:100%;height:100%;"></div></div>
-                    <div class="gallery-item gallery-item-tall stagger-item" data-stagger><div class="gp-5" style="width:100%;height:100%;"></div></div>
-                    <div class="gallery-item stagger-item" data-stagger><div class="gp-6" style="width:100%;height:100%;"></div></div>
-                    <div class="gallery-item gallery-item-wide stagger-item" data-stagger><div class="gp-7" style="width:100%;height:100%;"></div></div>
-                    <div class="gallery-item stagger-item" data-stagger><div class="gp-8" style="width:100%;height:100%;"></div></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- VISIT -->
-        <section class="section section-cream" id="visit" aria-labelledby="visit-heading">
-            <div class="section-inner">
-                <div class="visit-grid">
-                    <div class="visit-info animate-on-scroll" data-animate>
-                        <span class="section-label">Visit Us</span>
-                        <h2 class="section-heading" id="visit-heading">Find us on Margaret Street</h2>
-                        <div class="visit-address-block"><strong>Sage & Butler</strong><br>62 Margaret St<br>East Toowoomba QLD 4350<br>Australia</div>
-                        <a href="tel:+61745734883" class="visit-phone-link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 014.11 2a2 2 0 012-1.72h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> +61 7 4573 4883</a>
-
-                        <div>
-                            <p style="font-weight:600;font-size:0.85rem;margin-bottom:4px;">🕐 Opening Hours</p>
-                            <p style="font-size:0.8rem;color:var(--muted-text);margin-bottom:2px;" id="todayHoursSummary">Today: —</p>
-                            <button class="hours-accordion-toggle" id="hoursToggle" aria-expanded="false">View all hours <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
-                            <div class="hours-accordion-content" id="hoursAccordionContent">
-                                <table class="hours-table" id="hoursTable">
-                                    <tbody>
-                                        <tr data-day="saturday"><td>Saturday</td><td>6:30 am – 12:00 pm</td></tr>
-                                        <tr data-day="sunday"><td>Sunday</td><td>6:30 am – 12:00 pm</td></tr>
-                                        <tr data-day="monday"><td>Monday</td><td>6:30 am – 2:00 pm</td></tr>
-                                        <tr data-day="tuesday"><td>Tuesday</td><td>6:30 am – 2:00 pm</td></tr>
-                                        <tr data-day="wednesday"><td>Wednesday</td><td>6:30 am – 2:00 pm</td></tr>
-                                        <tr data-day="thursday"><td>Thursday</td><td>6:30 am – 2:00 pm</td></tr>
-                                        <tr data-day="friday"><td>Friday</td><td>6:30 am – 2:00 pm</td></tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
-                        <div class="visit-actions-row">
-                            <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Get Directions</a>
-                            <a href="tel:+61745734883" class="btn btn-outline btn-sm">Call</a>
-                            <a href="https://www.ubereats.com/au/store/sage-and-butler" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Order Online →</a>
-                        </div>
-                        <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">★ Read 230 Google Reviews →</a>
-                    </div>
-                    <div class="visit-image-card reveal-image" data-reveal></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FINAL CTA -->
-        <section class="final-cta" aria-labelledby="final-heading">
-            <h2 class="final-cta-heading" id="final-heading">Slow down.<br>Stay a while.</h2>
-            <p class="final-cta-sub">Your next coffee stop is waiting on Margaret Street.</p>
-            <div class="final-cta-actions">
-                <a href="https://www.ubereats.com/au/store/sage-and-butler" class="btn btn-primary" target="_blank" rel="noopener noreferrer" style="padding:12px 26px;">Order Online →</a>
-                <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" class="btn btn-outline" target="_blank" rel="noopener noreferrer" style="padding:12px 26px;">Get Directions</a>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="site-footer" role="contentinfo">
-        <div class="footer-inner">
-            <div>
-                <div class="footer-logo"><img src="https://raw.githubusercontent.com/deardecoder/Sage-Butler/main/fulllogo.png" alt="Sage & Butler" onerror="this.style.display='none';"></div>
-                <address class="footer-address">62 Margaret St<br>East Toowoomba QLD 4350<br>Australia<br><a href="tel:+61745734883" style="color:rgba(255,255,255,0.6);">+61 7 4573 4883</a></address>
-            </div>
-            <div class="footer-col"><h4>Browse</h4><a href="#menu">Menu</a><a href="#about">About</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a></div>
-            <div class="footer-col"><h4>Connect</h4><a href="https://www.instagram.com/sageandbutlercafe/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.facebook.com/sagebutlerneighbourhoodcafe" target="_blank" rel="noopener noreferrer">Facebook</a><a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" target="_blank" rel="noopener noreferrer">Google Reviews</a></div>
-            <div class="footer-col"><h4>Order</h4><a href="https://www.ubereats.com/au/store/sage-and-butler" target="_blank" rel="noopener noreferrer">Uber Eats</a><a href="tel:+61745734883">Call to Order</a><a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" target="_blank" rel="noopener noreferrer">Get Directions</a></div>
-        </div>
-        <div class="footer-bottom">
-            <span>&copy; 2024 Sage & Butler. All rights reserved.</span>
-            <span style="font-style:italic;">See you at Sage & Butler.</span>
-            <div class="footer-social-row">
-                <a href="https://www.instagram.com/sageandbutlercafe/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
-                <a href="https://www.facebook.com/sagebutlerneighbourhoodcafe" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- MOBILE STICKY BAR -->
-    <nav class="mobile-sticky-bar" aria-label="Quick actions">
-        <a href="tel:+61745734883"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 014.11 2a2 2 0 012-1.72h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> Call</a>
-        <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 2C8.7 2 6 4.7 6 8c0 5 6 12 6 12s6-7 6-12c0-3.3-2.7-6-6-6z"/></svg> Directions</a>
-        <a href="https://www.ubereats.com/au/store/sage-and-butler" target="_blank" rel="noopener noreferrer">Order Online</a>
+        <a class="btn btn-primary" href="https://www.ubereats.com/au/store/sage-%26-butler-cafe/GaLqBPgjXIu1TdlVKjOWLg?diningMode=PICKUP" target="_blank" rel="noopener">Order Online <span class="arrow">→</span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span class="hamburger"></span></button>
+      </div>
     </nav>
+  </header>
 
-    <script>
-        (function() {
-            const openingHours = {
-                sunday: { open: [6, 30], close: [12, 0] },
-                monday: { open: [6, 30], close: [14, 0] },
-                tuesday: { open: [6, 30], close: [14, 0] },
-                wednesday: { open: [6, 30], close: [14, 0] },
-                thursday: { open: [6, 30], close: [14, 0] },
-                friday: { open: [6, 30], close: [14, 0] },
-                saturday: { open: [6, 30], close: [12, 0] },
-            };
-            const dayNames = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
-            const dayDisplayNames = { sunday: 'Sunday', monday: 'Monday', tuesday: 'Tuesday', wednesday: 'Wednesday', thursday: 'Thursday', friday: 'Friday', saturday: 'Saturday' };
+  <div class="mobile-panel" id="mobilePanel" aria-hidden="true">
+    <div class="mobile-links">
+      <a href="#menu">Menu</a>
+      <a href="#experience">Experience</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#social">Social</a>
+      <a href="#visit">Visit</a>
+    </div>
+    <div class="mobile-social">
+      <a class="icon-btn" href="https://www.instagram.com/sageandbutlercafe/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".7" fill="currentColor"/></svg>
+      </a>
+      <a class="icon-btn" href="https://www.facebook.com/sagebutlerneighbourhoodcafe" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M14 8h3V4.7A14 14 0 0 0 14.2 4C10.9 4 9 6 9 9.6V12H6v3h3v5h3v-5h3l.5-3H12V10c0-1.2.4-2 2-2Z"/></svg>
+      </a>
+    </div>
+    <div class="mobile-actions">
+      <a class="btn btn-primary" href="https://www.ubereats.com/au/store/sage-%26-butler-cafe/GaLqBPgjXIu1TdlVKjOWLg?diningMode=PICKUP" target="_blank" rel="noopener">Order Online →</a>
+      <a class="btn btn-outline" href="tel:+61745734883">Call Café</a>
+      <a class="btn btn-outline" href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" target="_blank" rel="noopener">Get Directions</a>
+    </div>
+  </div>
 
-            function getQueenslandTime() {
-                const now = new Date();
-                const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
-                return new Date(utc + (10 * 3600000));
-            }
+  <div class="business-strip">
+    <div class="business-grid">
+      <a class="business-item" href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" target="_blank" rel="noopener">
+        <svg class="icon business-icon" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <span><strong>62 Margaret St</strong><small>East Toowoomba QLD 4350 · Get Directions →</small></span>
+      </a>
+      <div class="business-item">
+        <svg class="icon business-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span><strong id="todayHours">Today · 6:30am–2pm</strong><small id="openText">Checking today's hours…</small></span>
+      </div>
+      <div class="business-item rating-mini">
+        <span class="stars">★★★★★</span>
+        <span><strong>4.7</strong><small>230 Google Reviews</small></span>
+      </div>
+      <a class="btn btn-primary" href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" target="_blank" rel="noopener">Reviews & Maps →</a>
+    </div>
+  </div>
 
-            function getTodayInfo() {
-                const qldTime = getQueenslandTime();
-                const dayIndex = qldTime.getDay();
-                const dayName = dayNames[dayIndex];
-                const hours = openingHours[dayName];
-                const currentMinutes = qldTime.getHours() * 60 + qldTime.getMinutes();
-                const openMinutes = hours.open[0] * 60 + hours.open[1];
-                const closeMinutes = hours.close[0] * 60 + hours.close[1];
-                const isOpen = currentMinutes >= openMinutes && currentMinutes < closeMinutes;
-                const formatTime = (h, m) => {
-                    const ampm = h >= 12 ? 'pm' : 'am';
-                    const displayH = h > 12 ? h - 12 : (h === 0 ? 12 : h);
-                    return displayH + (m === 0 ? '' : ':' + m.toString().padStart(2, '0')) + ampm;
-                };
-                return { dayName, dayDisplay: dayDisplayNames[dayName], isOpen, openStr: formatTime(hours.open[0], hours.open[1]), closeStr: formatTime(hours.close[0], hours.close[1]) };
-            }
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-media">
+        <img src="https://scontent-del3-2.xx.fbcdn.net/v/t51.82787-15/719992855_18467586283105028_7235557640260120418_n.jpg?stp=dst-jpg_tt6&cstp=mx1350x1688&ctp=s1350x1688&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=C-UsPlO-hx0Q7kNvwHK53Hj&_nc_oc=Adp-YrhLs-Uc3ng7Zb-wyg9l0t3qmkanrAy536uXmCfdwZpCIaXFQtjjwWy3pSwc8EXhyDbZeOWgRQHeVp5mYlCS&_nc_zt=23&_nc_ht=scontent-del3-2.xx&_nc_gid=rWjEzTktUeFVtYolUGFxLQ&_nc_ss=7b289&oh=00_AQEQttY5BUKO1bXfV0GM6jpDpLMeLjV4wLNAsNJ6DQc-bQ&oe=6A7C8F33" alt="Sage & Butler café atmosphere" fetchpriority="high">
+      </div>
+      <div class="hero-badge" aria-label="4.7 rating from 230 reviews">
+        <div><strong>4.7</strong><span>Google<br>Reviews</span></div>
+      </div>
+      <div class="hero-content reveal">
+        <div class="eyebrow">Coffee · Breakfast · Neighbourhood</div>
+        <h1>Sage &<br>Butler.</h1>
+        <p class="hero-copy">A warm neighbourhood café in East Toowoomba for coffee, breakfast, brunch and house-made treats.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://www.ubereats.com/au/store/sage-%26-butler-cafe/GaLqBPgjXIu1TdlVKjOWLg?diningMode=PICKUP" target="_blank" rel="noopener">Order Online <span class="arrow">→</span></a>
+          <a class="btn btn-outline" href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" target="_blank" rel="noopener">Get Directions <span class="arrow">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-scroll">Scroll to explore</div>
+    </section>
 
-            function updateStatusIndicator() {
-                const today = getTodayInfo();
-                const statusDot = document.getElementById('statusDot');
-                const statusText = document.getElementById('statusText');
-                const todayHoursSummary = document.getElementById('todayHoursSummary');
-                if (statusDot && statusText) {
-                    statusDot.className = 'status-dot ' + (today.isOpen ? 'open' : 'closed');
-                    statusText.textContent = today.isOpen ? 'Open now · ' + today.openStr + ' – ' + today.closeStr : 'Closed · Opens ' + today.openStr + ' ' + today.dayDisplay;
-                }
-                if (todayHoursSummary) todayHoursSummary.textContent = 'Today (' + today.dayDisplay + '): ' + today.openStr + ' – ' + today.closeStr;
-                const rows = document.querySelectorAll('#hoursTable tr');
-                rows.forEach(row => {
-                    row.classList.remove('today-row');
-                    if (row.dataset.day === today.dayName) row.classList.add('today-row');
-                });
-            }
-            updateStatusIndicator();
-            setInterval(updateStatusIndicator, 60000);
+    <section class="section section-cream" id="experience">
+      <div class="container intro-grid">
+        <div class="reveal">
+          <div class="section-kicker">The Sage & Butler feeling</div>
+          <div class="intro-statement">Good coffee. Good food. Good people.</div>
+          <div class="leaf-divider">
+            <span></span>
+            <svg viewBox="0 0 32 32"><path d="M4 27C9 17 16 10 28 5c-1 11-8 19-24 22Z" fill="none" stroke="currentColor"/><path d="M7 25 25 8" fill="none" stroke="currentColor"/></svg>
+            <span></span>
+          </div>
+        </div>
+        <div class="reveal">
+          <p class="intro-text">Sage & Butler brings together coffee, breakfast, brunch and house-made treats in a relaxed East Toowoomba setting. Customer reviews consistently highlight friendly service, great coffee, delicious food and a welcoming atmosphere.</p>
+          <div style="margin-top:24px;display:flex;flex-wrap:wrap;gap:10px">
+            <a class="btn btn-outline" href="#menu">Explore Menu →</a>
+            <a class="btn btn-outline" href="#reviews">Read Reviews →</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            const hoursToggle = document.getElementById('hoursToggle');
-            const hoursContent = document.getElementById('hoursAccordionContent');
-            if (hoursToggle && hoursContent) {
-                hoursToggle.addEventListener('click', () => {
-                    const isOpen = hoursContent.classList.contains('open');
-                    if (isOpen) {
-                        hoursContent.classList.remove('open');
-                        hoursToggle.classList.remove('open');
-                        hoursToggle.setAttribute('aria-expanded', 'false');
-                        hoursToggle.innerHTML = 'View all hours <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>';
-                    } else {
-                        hoursContent.classList.add('open');
-                        hoursToggle.classList.add('open');
-                        hoursToggle.setAttribute('aria-expanded', 'true');
-                        hoursToggle.innerHTML = 'Hide all hours <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>';
-                    }
-                });
-            }
+    <section class="section" style="background:var(--ivory)">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">A taste of Sage & Butler</div>
+          <h2 class="section-title">Made for slow mornings & good coffee.</h2>
+          <p class="section-intro">From a flat white and iced latte to breakfast favourites and home-baked treats, explore some of the café's popular picks.</p>
+        </div>
+        <div class="feature-grid stagger reveal">
+          <article class="feature-card">
+            <div class="feature-image">
+              <img src="https://scontent-del3-1.xx.fbcdn.net/v/t39.30808-6/547465981_1376590981142456_578425779460282096_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx1440x1080&ctp=s1440x1080&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=N262PncFzg0Q7kNvwHEc9It&_nc_oc=Adohv9jGXQRzv8-P7SP5RHe7shgeu8XwiyZM80doYZbiy0QLYhDooCniLbP9kHVVrhqo-2n6htxv-pNa01HVkhWM&_nc_zt=23&_nc_ht=scontent-del3-1.xx&_nc_gid=MUDp3acYnpdOa_0tl0WwzA&_nc_ss=7b289&oh=00_AQFxlprAwQVNcaM3SxXlj_HTJrIlJLPw3B-8z0Dv7jnEUA&oe=6A7CB44D" alt="Coffee and café atmosphere" loading="lazy">
+            </div>
+            <div class="feature-info">
+              <div class="feature-meta"><span>Coffee</span><span>$6.75</span></div>
+              <h3>Flat White</h3>
+              <p>Coffee by Single O.</p>
+            </div>
+          </article>
+          <article class="feature-card">
+            <div class="feature-image">
+              <img src="https://scontent-del3-1.xx.fbcdn.net/v/t39.30808-6/543414317_1369462311855323_6714935142605688456_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xxnLczVWNBgQ7kNvwEV7IOc&_nc_oc=AdoxV7VG9rWn6e3IgU4r0UcWkmkpMhG8gCkm6ti2peKXaMZ5D_sXLp_-ynRxOG5NBhZEe_Ci6GfomgW0nwKf4Fbu&_nc_zt=23&_nc_ht=scontent-del3-1.xx&_nc_gid=ae9lXgp7tPxg_khwQt-XhQ&_nc_ss=7b289&oh=00_AQEEr0LJkJ1G5murx2wbH5tekWZrRr0nAC3T_JqfR9N8dA&oe=6A7CB1DC" alt="Sage & Butler food" loading="lazy">
+            </div>
+            <div class="feature-info">
+              <div class="feature-meta"><span>Breakfast</span><span>$24.90</span></div>
+              <h3>Acai Bowl</h3>
+              <p>Organic acai with seasonal berries, sticky date brownie and butterscotch sauce.</p>
+            </div>
+          </article>
+          <article class="feature-card">
+            <div class="feature-image">
+              <img src="https://scontent-del2-1.xx.fbcdn.net/v/t39.30808-6/642233383_1534282065373346_191031271874998833_n.jpg?stp=c0.89.1080.1080a_cp6_dst-jpg_tt6&cstp=mx1080x1080&ctp=s206x206&_nc_cat=111&ccb=1-7&_nc_sid=50ad20&_nc_ohc=alPfuO0eg2AQ7kNvwHhJHzi&_nc_oc=AdrWMSuKa2cjYLlhDNn9jBo7OarXhVHMbRMGwdXdXNpLzlQbp1k1CWosHHx8aCQrafxKfmuQ5COfLLYbJ7ndd0_Z&_nc_zt=23&_nc_ht=scontent-del2-1.xx&_nc_gid=SluQYecQksp3HCXQBXEaFw&_nc_ss=7b289&oh=00_AQEKHr1sxcP8c1JdZCfLr7fRNa6Xm_wummHLw4DJtsFgRQ&oe=6A7C8BC7" alt="Sage & Butler interior" loading="lazy">
+            </div>
+            <div class="feature-info">
+              <div class="feature-meta"><span>Sweet Treat</span><span>$10.00</span></div>
+              <h3>Carrot Cake</h3>
+              <p>Sage & Butler's famous carrot cake with cream cheese frosting.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-            const menuData = { /* ... same menu data ... */ };
-            // (menu data unchanged, included in full code)
-            const menuGrid = document.getElementById('menuItemsGrid');
-            const eggNote = document.getElementById('eggNote');
-            const menuTabs = document.getElementById('menuTabs');
-            let currentCategory = 'breakfast';
+    <section class="section section-cream" id="menu">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">The menu</div>
+          <h2 class="section-title">Something for every kind of morning.</h2>
+          <p class="section-intro">Browse breakfast, sweet treats, hot beverages and cold drinks. Prices and descriptions reflect the supplied menu.</p>
+        </div>
 
-            function renderMenu(category) {
-                const items = menuData[category] || [];
-                menuGrid.innerHTML = items.map(item => `<div class="menu-item stagger-item" data-stagger><div class="menu-item-info"><span class="menu-item-name">${item.name}${item.popular ? '<span class="menu-item-popular">Popular</span>' : ''}</span>${item.desc ? `<p class="menu-item-desc">${item.desc}</p>` : ''}</div><span class="menu-item-price">${item.price}</span></div>`).join('');
-                eggNote.style.display = category === 'breakfast' ? 'block' : 'none';
-                requestAnimationFrame(() => {
-                    menuGrid.querySelectorAll('.stagger-item').forEach((el, i) => { el.style.transitionDelay = i * 0.03 + 's'; el.classList.add('visible'); });
-                });
-                currentCategory = category;
-            }
-            renderMenu('breakfast');
-            menuTabs.addEventListener('click', e => {
-                const tab = e.target.closest('.menu-tab');
-                if (!tab) return;
-                const category = tab.dataset.category;
-                if (!category || category === currentCategory) return;
-                menuTabs.querySelectorAll('.menu-tab').forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
-                tab.classList.add('active');
-                tab.setAttribute('aria-selected', 'true');
-                menuGrid.style.opacity = '0';
-                setTimeout(() => { renderMenu(category); menuGrid.style.opacity = '1'; }, 160);
-            });
+        <div class="menu-shell">
+          <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+            <button class="menu-tab active" role="tab" aria-selected="true" data-tab="breakfast">Breakfast</button>
+            <button class="menu-tab" role="tab" aria-selected="false" data-tab="sweet">Sweet Treats</button>
+            <button class="menu-tab" role="tab" aria-selected="false" data-tab="hot">Hot Beverages</button>
+            <button class="menu-tab" role="tab" aria-selected="false" data-tab="cold">Cold Beverages</button>
+          </div>
 
-            // Mobile nav
-            const hamburger = document.getElementById('hamburger');
-            const mobileNav = document.getElementById('mobileNav');
-            let navOpen = false;
-            function openNav() { navOpen = true; hamburger.classList.add('active'); mobileNav.classList.add('active'); mobileNav.setAttribute('aria-hidden', 'false'); hamburger.setAttribute('aria-expanded', 'true'); document.body.style.overflow = 'hidden'; }
-            function closeNav() { navOpen = false; hamburger.classList.remove('active'); mobileNav.classList.remove('active'); mobileNav.setAttribute('aria-hidden', 'true'); hamburger.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; }
-            hamburger.addEventListener('click', () => navOpen ? closeNav() : openNav());
-            mobileNav.addEventListener('click', e => { if (e.target === mobileNav) closeNav(); });
-            document.querySelectorAll('.mobile-nav-link').forEach(l => l.addEventListener('click', closeNav));
-            document.addEventListener('keydown', e => { if (e.key === 'Escape' && navOpen) closeNav(); });
+          <div>
+            <div class="menu-category active" id="breakfast" role="tabpanel">
+              <div class="menu-note">Note regarding eggs: dishes containing eggs reflect current rising costs/shortages.</div>
+              <div class="menu-list">
+                <div class="menu-row"><div><h4>Acai Bowl</h4><p>Nectar Fruits Organic Acai with caramelised date ganache, seasonal berries, sticky date brownie & butterscotch sauce.</p></div><strong class="menu-price">$24.90</strong></div>
+                <div class="menu-row"><div><h4>Bacon & Egg Burger</h4><p>Bacon & fried egg on a toasted milk bun with house-made caramelised onion relish, smoky BBQ sauce & tasty cheese.</p></div><strong class="menu-price">$16.15</strong></div>
+                <div class="menu-row"><div><h4>Ham & Cheese Croissant</h4><p>Ham & tasty cheese on a flaky croissant served toasted.</p></div><strong class="menu-price">$11.90</strong></div>
+                <div class="menu-row"><div><h4>Eggs Benedict Your Way</h4><p>2 poached eggs, 2 rashers of bacon, spinach and hollandaise sauce on sourdough toast.</p></div><strong class="menu-price">$30.25</strong></div>
+                <div class="menu-row"><div><h4>Bacon and Eggs</h4><p>Served on toasted sourdough.</p></div><strong class="menu-price">$27.25</strong></div>
+                <div class="menu-row"><div><h4>Sourdough Toast</h4><p>Toasted sourdough served with butter & your choice of 1 spread.</p></div><strong class="menu-price">$9.50</strong></div>
+                <div class="menu-row"><div><h4>Eggs on Toast</h4><p>Served on toasted sourdough.</p></div><strong class="menu-price">$20.50</strong></div>
+                <div class="menu-row"><div><h4>House-Made Porridge</h4><p>Served warm with fresh berries, mixed berry compote & salted vanilla maple.</p></div><strong class="menu-price">$20.90</strong></div>
+                <div class="menu-row"><div><h4>Granola Bowl</h4><p>House made vanilla maple granola, brown butter honey ganache, citrus compote, seasonal berries & your choice of yoghurt.</p></div><strong class="menu-price">$21.20</strong></div>
+                <div class="menu-row"><div><h4>Avocado Toast</h4><p>Crème fraîche whipped avocado, maple & herb butternut pumpkin, hot honey, feta and pepita chilli crunch.</p></div><strong class="menu-price">$27.25</strong></div>
+                <div class="menu-row"><div><h4>Savoury Muffin</h4><p>Pumpkin, spinach & feta muffin made in house daily and served warm.</p></div><strong class="menu-price">$10.00</strong></div>
+              </div>
+            </div>
 
-            // Header scroll
-            const siteHeader = document.getElementById('siteHeader');
-            function updateHeader() { siteHeader.classList.toggle('scrolled', window.scrollY > 30); }
-            window.addEventListener('scroll', updateHeader, { passive: true });
-            updateHeader();
+            <div class="menu-category" id="sweet" role="tabpanel">
+              <div class="menu-list">
+                <div class="menu-row"><div><h4>Blueberry Muffin</h4><p>Baked in house every day.</p></div><strong class="menu-price">$6.00</strong></div>
+                <div class="menu-row"><div><h4>Carrot Cake</h4><p>Sage & Butler's famous carrot cake with cream cheese frosting.</p></div><strong class="menu-price">$10.00</strong></div>
+                <div class="menu-row"><div><h4>Banana Bread</h4><p>Baked in house with blueberries and topped with brown sugar & walnuts, served toasted with butter.</p></div><strong class="menu-price">$10.00</strong></div>
+                <div class="menu-row"><div><h4>Melting Moment</h4><p>Classic melting moment made in-house.</p></div><strong class="menu-price">$4.00</strong></div>
+                <div class="menu-row"><div><h4>Fudge Brownie</h4><p>Made in house.</p></div><strong class="menu-price">$6.50</strong></div>
+                <div class="menu-row"><div><h4>Cinnamon Spiced Pear Muffin</h4><p>Baked in house every day.</p></div><strong class="menu-price">$6.00</strong></div>
+                <div class="menu-row"><div><h4>Chocolate Whoopie Cookie</h4><p>Made in-house.</p></div><strong class="menu-price">$4.50</strong></div>
+                <div class="menu-row"><div><h4>Chunky Choc Chip Cookie</h4><p>Baked in house and best served warm.</p></div><strong class="menu-price">$6.00</strong></div>
+                <div class="menu-row"><div><h4>Raisin Toast</h4><p>1 slice of thick cut fruit toast.</p></div><strong class="menu-price">$5.25</strong></div>
+              </div>
+            </div>
 
-            // Scroll animations
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); if (!entry.target.dataset.stagger) observer.unobserve(entry.target); } });
-            }, { rootMargin: '0px 0px -30px 0px', threshold: 0.08 });
-            document.querySelectorAll('.animate-on-scroll, .reveal-image, .stagger-item').forEach(el => observer.observe(el));
-            document.querySelectorAll('.stagger-item').forEach((el, i) => el.style.transitionDelay = i * 0.03 + 's');
-            setTimeout(() => {
-                document.querySelectorAll('.animate-on-scroll, .reveal-image, .stagger-item').forEach(el => {
-                    const rect = el.getBoundingClientRect();
-                    if (rect.top < window.innerHeight && rect.bottom > 0) el.classList.add('visible');
-                });
-            }, 200);
+            <div class="menu-category" id="hot" role="tabpanel">
+              <div class="menu-list">
+                <div class="menu-row"><div><h4>Flat White</h4><p>Coffee by Single O.</p></div><strong class="menu-price">$6.75</strong></div>
+                <div class="menu-row"><div><h4>Cappuccino</h4><p>Coffee by Single O.</p></div><strong class="menu-price">$6.75</strong></div>
+                <div class="menu-row"><div><h4>Latte</h4><p>Coffee by Single O.</p></div><strong class="menu-price">$6.75</strong></div>
+                <div class="menu-row"><div><h4>Milk Hot Chocolate</h4><p>Made with grated dairy milk chocolate.</p></div><strong class="menu-price">$7.00</strong></div>
+                <div class="menu-row"><div><h4>Chai Latte</h4><p>9 Spice & Sticky Honey Chai Leaves.</p></div><strong class="menu-price">$7.00</strong></div>
+                <div class="menu-row"><div><h4>Matcha Latte</h4><p>Chamellia Matcha Green Tea Latte with organic panela.</p></div><strong class="menu-price">$6.75</strong></div>
+                <div class="menu-row"><div><h4>Mocha</h4><p>Made on Guatemalan Dark Chocolate Powder.</p></div><strong class="menu-price">$7.00</strong></div>
+                <div class="menu-row"><div><h4>Long Black</h4><p>Coffee by Single O.</p></div><strong class="menu-price">$6.75</strong></div>
+                <div class="menu-row"><div><h4>Espresso</h4><p>Coffee by Single O.</p></div><strong class="menu-price">$5.25</strong></div>
+                <div class="menu-row"><div><h4>Turmeric Latte</h4><p>Warm and comforting drink with a hint of turmeric.</p></div><strong class="menu-price">$6.50</strong></div>
+                <div class="menu-row"><div><h4>Guatemalan Dark Hot Chocolate</h4><p>Organic dark chocolate.</p></div><strong class="menu-price">$6.75</strong></div>
+                <div class="menu-row"><div><h4>Piccolo</h4><p>Coffee by Single O.</p></div><strong class="menu-price">$6.00</strong></div>
+              </div>
+            </div>
 
-            // Smooth scroll for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        e.preventDefault();
-                        window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 100, behavior: 'smooth' });
-                    }
-                });
-            });
+            <div class="menu-category" id="cold" role="tabpanel">
+              <div class="menu-list">
+                <div class="menu-row"><div><h4>Iced Latte</h4><p>Small: double espresso · Large: triple espresso. Syrup available.</p></div><strong class="menu-price">$7.50</strong></div>
+                <div class="menu-row"><div><h4>Milk Shakes</h4><p>Thick and creamy blended treats.</p></div><strong class="menu-price">$7.75</strong></div>
+                <div class="menu-row"><div><h4>Iced Coffee</h4><p>500ml, double espresso, lightly sweetened with vanilla, served with cream and ice-cream.</p></div><strong class="menu-price">$9.50</strong></div>
+                <div class="menu-row"><div><h4>Iced Matcha</h4><p>Iced Chamellia Matcha Green Tea Latte lightly sweetened with organic panela sugar.</p></div><strong class="menu-price">$7.25</strong></div>
+                <div class="menu-row"><div><h4>Iced Mocha</h4><p>500ml, double espresso and chocolate syrup, served with cream and ice-cream.</p></div><strong class="menu-price">$10.00</strong></div>
+                <div class="menu-row"><div><h4>Iced Chai</h4><p>Honey 9 Spice Sticky Chai tea leaves infused with milk of your choice.</p></div><strong class="menu-price">$8.00</strong></div>
+                <div class="menu-row"><div><h4>Iced Chocolate</h4><p>500ml, chocolate syrup with cream and ice-cream.</p></div><strong class="menu-price">$9.25</strong></div>
+                <div class="menu-row"><div><h4>Bottled Water</h4><p>600ml.</p></div><strong class="menu-price">$4.00</strong></div>
+                <div class="menu-row"><div><h4>Iced Long Black</h4><p>Small: double espresso · Large: triple espresso.</p></div><strong class="menu-price">$7.25</strong></div>
+                <div class="menu-row"><div><h4>Tropical Mango Smoothie</h4><p>Mango, banana, coconut yoghurt, turmeric, lemon & Mango Nectar.</p></div><strong class="menu-price">$12.90</strong></div>
+                <div class="menu-row"><div><h4>Super Berry Smoothie</h4><p>Mixed berries, acai, honey, coconut water.</p></div><strong class="menu-price">$12.90</strong></div>
+                <div class="menu-row"><div><h4>Crows Nest Raspberry Lemonade</h4><p></p></div><strong class="menu-price">$6.00</strong></div>
+                <div class="menu-row"><div><h4>Crows Nest Ginger Beer</h4><p></p></div><strong class="menu-price">$6.00</strong></div>
+                <div class="menu-row"><div><h4>Crowns Nest Lemon Lime Bitters</h4><p></p></div><strong class="menu-price">$6.00</strong></div>
+                <div class="menu-row"><div><h4>Crows Nest Double Sarsaparilla</h4><p>A classic Australian soft drink flavour, sarsaparilla is a sweet and creamy treat.</p></div><strong class="menu-price">$6.00</strong></div>
+                <div class="menu-row"><div><h4>Crows Nest Creaming Soda</h4><p></p></div><strong class="menu-price">$6.00</strong></div>
+                <div class="menu-row"><div><h4>Yarra Valley Apple Blackcurrent Juice</h4><p></p></div><strong class="menu-price">$7.50</strong></div>
+                <div class="menu-row"><div><h4>Yarra Valley Green Juice</h4><p>Blend of apple, apricot, mango and kiwi.</p></div><strong class="menu-price">$7.50</strong></div>
+                <div class="menu-row"><div><h4>Yarra Valley Red'y Set Go Juice</h4><p>Blend of apple, guava, blackcurrant, blueberry and strawberry.</p></div><strong class="menu-price">$7.50</strong></div>
+                <div class="menu-row"><div><h4>Yarra Valley Orang Juice</h4><p></p></div><strong class="menu-price">$7.50</strong></div>
+                <div class="menu-row"><div><h4>Coke Can</h4><p></p></div><strong class="menu-price">$5.25</strong></div>
+                <div class="menu-row"><div><h4>Coke Zero Sugar Can</h4><p></p></div><strong class="menu-price">$5.25</strong></div>
+                <div class="menu-row"><div><h4>Wild Ones Peach Iced Tea</h4><p>Fruity and refreshing iced tea infused with peach flavour.</p></div><strong class="menu-price">$7.00</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            console.log('🌿 Sage & Butler — Ready. 📍 62 Margaret St, East Toowoomba');
-        })();
-    </script>
+    <section class="section section-sage" id="reviews">
+      <div class="container reviews-grid">
+        <div class="reveal">
+          <div class="section-kicker">Google reviews</div>
+          <div class="rating-big">4.7</div>
+          <div class="rating-stars">★★★★★</div>
+          <div class="review-count">230 reviews on Google</div>
+          <div class="review-actions">
+            <a class="btn btn-light" href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" target="_blank" rel="noopener">Read Google Reviews ↗</a>
+          </div>
+        </div>
+        <div class="review-list stagger reveal">
+          <article class="review-card">
+            <blockquote>“The staff are friendly, the food excellent and the selection good.”</blockquote>
+            <footer>Christine Takahashi · Local Guide</footer>
+          </article>
+          <article class="review-card">
+            <blockquote>“Breakfast so good… the staff amazing fast and you can see take pride in their job.”</blockquote>
+            <footer>Steve · Local Guide</footer>
+          </article>
+          <article class="review-card">
+            <blockquote>“The coffee was beautiful and the service was friendly, warm and welcoming.”</blockquote>
+            <footer>Holly Greentree</footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section social-section" id="social">
+      <div class="container">
+        <div class="social-head reveal">
+          <div class="section-head" style="margin:0">
+            <div class="section-kicker">Follow the café</div>
+            <h2 class="section-title">See what's happening at Sage & Butler.</h2>
+            <p class="section-intro">For fresh café moments, food, coffee and updates, follow Sage & Butler on Instagram and Facebook.</p>
+          </div>
+          <div class="social-links-large">
+            <a class="btn btn-outline" href="https://www.instagram.com/sageandbutlercafe/" target="_blank" rel="noopener">Instagram ↗</a>
+            <a class="btn btn-outline" href="https://www.facebook.com/sagebutlerneighbourhoodcafe" target="_blank" rel="noopener">Facebook ↗</a>
+          </div>
+        </div>
+        <div class="social-photo-grid stagger reveal">
+          <a class="social-photo" href="https://www.facebook.com/sagebutlerneighbourhoodcafe/photos" target="_blank" rel="noopener">
+            <img src="https://scontent-del3-2.xx.fbcdn.net/v/t51.82787-15/719992855_18467586283105028_7235557640260120418_n.jpg?stp=dst-jpg_tt6&cstp=mx1350x1688&ctp=s1350x1688&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=C-UsPlO-hx0Q7kNvwHK53Hj&_nc_oc=Adp-YrhLs-Uc3ng7Zb-wyg9l0t3qmkanrAy536uXmCfdwZpCIaXFQtjjwWy3pSwc8EXhyDbZeOWgRQHeVp5mYlCS&_nc_zt=23&_nc_ht=scontent-del3-2.xx&_nc_gid=rWjEzTktUeFVtYolUGFxLQ&_nc_ss=7b289&oh=00_AQEQttY5BUKO1bXfV0GM6jpDpLMeLjV4wLNAsNJ6DQc-bQ&oe=6A7C8F33" alt="Sage & Butler outdoor café seating" loading="lazy">
+          </a>
+          <a class="social-photo" href="https://www.facebook.com/sagebutlerneighbourhoodcafe/photos" target="_blank" rel="noopener">
+            <img src="https://scontent-del3-1.xx.fbcdn.net/v/t39.30808-6/547465981_1376590981142456_578425779460282096_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx1440x1080&ctp=s1440x1080&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=N262PncFzg0Q7kNvwHEc9It&_nc_oc=Adohv9jGXQRzv8-P7SP5RHe7shgeu8XwiyZM80doYZbiy0QLYhDooCniLbP9kHVVrhqo-2n6htxv-pNa01HVkhWM&_nc_zt=23&_nc_ht=scontent-del3-1.xx&_nc_gid=MUDp3acYnpdOa_0tl0WwzA&_nc_ss=7b289&oh=00_AQFxlprAwQVNcaM3SxXlj_HTJrIlJLPw3B-8z0Dv7jnEUA&oe=6A7CB44D" alt="Coffee at Sage & Butler" loading="lazy">
+          </a>
+          <a class="social-photo" href="https://www.facebook.com/sagebutlerneighbourhoodcafe/photos" target="_blank" rel="noopener">
+            <img src="https://scontent-del2-1.xx.fbcdn.net/v/t39.30808-6/642233383_1534282065373346_191031271874998833_n.jpg?stp=c0.89.1080.1080a_cp6_dst-jpg_tt6&cstp=mx1080x1080&ctp=s206x206&_nc_cat=111&ccb=1-7&_nc_sid=50ad20&_nc_ohc=alPfuO0eg2AQ7kNvwHhJHzi&_nc_oc=AdrWMSuKa2cjYLlhDNn9jBo7OarXhVHMbRMGwdXdXNpLzlQbp1k1CWosHHx8aCQrafxKfmuQ5COfLLYbJ7ndd0_Z&_nc_zt=23&_nc_ht=scontent-del2-1.xx&_nc_gid=SluQYecQksp3HCXQBXEaFw&_nc_ss=7b289&oh=00_AQEKHr1sxcP8c1JdZCfLr7fRNa6Xm_wummHLw4DJtsFgRQ&oe=6A7C8BC7" alt="Sage & Butler interior" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cream" id="visit">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">Come by</div>
+          <h2 class="section-title">Find us in East Toowoomba.</h2>
+          <p class="section-intro">Plan your visit, check today's hours or head straight to Google Maps.</p>
+        </div>
+
+        <div class="visit-grid">
+          <div class="visit-card reveal">
+            <div class="section-kicker">Sage & Butler</div>
+            <h3>62 Margaret St.</h3>
+            <div class="address">East Toowoomba QLD 4350<br>Australia</div>
+            <div class="contact-line">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.7 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.5c.8.4 1.7.6 2.6.7A2 2 0 0 1 22 16.9Z"/></svg>
+              <a href="tel:+61745734883">+61 7 4573 4883</a>
+            </div>
+            <div class="contact-line">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" target="_blank" rel="noopener">Open Google Maps →</a>
+            </div>
+
+            <div class="hours" id="hoursList">
+              <div class="hours-row" data-day="6"><span>Saturday</span><span>6:30 am–12 pm</span></div>
+              <div class="hours-row" data-day="0"><span>Sunday</span><span>6:30 am–12 pm</span></div>
+              <div class="hours-row" data-day="1"><span>Monday</span><span>6:30 am–2 pm</span></div>
+              <div class="hours-row" data-day="2"><span>Tuesday</span><span>6:30 am–2 pm</span></div>
+              <div class="hours-row" data-day="3"><span>Wednesday</span><span>6:30 am–2 pm</span></div>
+              <div class="hours-row" data-day="4"><span>Thursday</span><span>6:30 am–2 pm</span></div>
+              <div class="hours-row" data-day="5"><span>Friday</span><span>6:30 am–2 pm</span></div>
+            </div>
+
+            <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:24px">
+              <a class="btn btn-primary" href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" target="_blank" rel="noopener">Get Directions ↗</a>
+              <a class="btn btn-outline" href="tel:+61745734883">Call Café</a>
+            </div>
+          </div>
+
+          <div class="map-card reveal" aria-label="Sage & Butler location panel">
+            <div class="map-card-content">
+              <div class="map-pin">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              </div>
+              <div>
+                <div class="section-kicker">Google Maps</div>
+                <h3>Your coffee stop in East Toowoomba.</h3>
+                <p>62 Margaret St, East Toowoomba QLD 4350. Open the official Google Maps listing for directions and the latest business information.</p>
+                <a class="btn btn-primary" href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" target="_blank" rel="noopener">Open Google Maps ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta">
+      <div class="container final-content reveal">
+        <div class="section-kicker">Sage & Butler · East Toowoomba</div>
+        <h2>Come for the coffee.<br>Stay for the feeling.</h2>
+        <p>Find us at 62 Margaret St, check today's hours, read the latest Google reviews or order online.</p>
+        <div class="final-actions">
+          <a class="btn btn-light" href="https://www.ubereats.com/au/store/sage-%26-butler-cafe/GaLqBPgjXIu1TdlVKjOWLg?diningMode=PICKUP" target="_blank" rel="noopener">Order Online →</a>
+          <a class="btn btn-outline" href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" target="_blank" rel="noopener" style="color:white;border-color:rgba(255,255,255,.5)">Get Directions ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-main">
+        <a class="brand" href="#top" aria-label="Sage & Butler home">
+          <img src="https://raw.githubusercontent.com/deardecoder/Sage-Butler/main/fulllogo.png" alt="Sage & Butler">
+        </a>
+        <p class="footer-copy">A neighbourhood café in East Toowoomba for coffee, breakfast, brunch and house-made treats.</p>
+        <div class="socials">
+          <a class="icon-btn" href="https://www.instagram.com/sageandbutlercafe/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".7" fill="currentColor"/></svg>
+          </a>
+          <a class="icon-btn" href="https://www.facebook.com/sagebutlerneighbourhoodcafe" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M14 8h3V4.7A14 14 0 0 0 14.2 4C10.9 4 9 6 9 9.6V12H6v3h3v5h3v-5h3l.5-3H12V10c0-1.2.4-2 2-2Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-title">Explore</div>
+        <div class="footer-links">
+          <a href="#menu">Menu</a>
+          <a href="#experience">Experience</a>
+          <a href="#reviews">Google Reviews</a>
+          <a href="#social">Instagram & Facebook</a>
+          <a href="#visit">Visit</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-title">Visit</div>
+        <div class="footer-links">
+          <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" target="_blank" rel="noopener">62 Margaret St, East Toowoomba</a>
+          <a href="tel:+61745734883">+61 7 4573 4883</a>
+          <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" target="_blank" rel="noopener">Get Directions →</a>
+          <a href="https://www.ubereats.com/au/store/sage-%26-butler-cafe/GaLqBPgjXIu1TdlVKjOWLg?diningMode=PICKUP" target="_blank" rel="noopener">Order Online →</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Sage & Butler. All rights reserved.</span>
+      <span>East Toowoomba · Queensland, Australia</span>
+    </div>
+  </footer>
+
+  <div class="mobile-sticky" aria-label="Quick actions">
+    <a href="tel:+61745734883">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.7 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.5c.8.4 1.7.6 2.6.7A2 2 0 0 1 22 16.9Z"/></svg>
+      Call
+    </a>
+    <a href="https://maps.app.goo.gl/44qZmY3U1j7qk4Fo7" target="_blank" rel="noopener">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+      Directions
+    </a>
+    <a class="order" href="https://www.ubereats.com/au/store/sage-%26-butler-cafe/GaLqBPgjXIu1TdlVKjOWLg?diningMode=PICKUP" target="_blank" rel="noopener">
+      Order Online →
+    </a>
+  </div>
+
+  <script>
+    const header = document.getElementById('header');
+    const toggle = document.getElementById('menuToggle');
+    const panel = document.getElementById('mobilePanel');
+
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 8);
+    }, {passive:true});
+
+    function closeMenu(){
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded','false');
+      panel.classList.remove('open');
+      panel.setAttribute('aria-hidden','true');
+      document.body.classList.remove('menu-open');
+    }
+
+    toggle.addEventListener('click', () => {
+      const open = !panel.classList.contains('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      panel.classList.toggle('open', open);
+      panel.setAttribute('aria-hidden', String(!open));
+      document.body.classList.toggle('menu-open', open);
+    });
+
+    panel.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', closeMenu));
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {threshold:.12, rootMargin:'0px 0px -40px'});
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    document.querySelectorAll('.menu-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.menu-tab').forEach(t => {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected','false');
+        });
+        document.querySelectorAll('.menu-category').forEach(c => c.classList.remove('active'));
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected','true');
+        document.getElementById(tab.dataset.tab).classList.add('active');
+      });
+    });
+
+    const schedule = {
+      0:{start:6.5,end:12,label:'6:30am–12pm'},
+      1:{start:6.5,end:14,label:'6:30am–2pm'},
+      2:{start:6.5,end:14,label:'6:30am–2pm'},
+      3:{start:6.5,end:14,label:'6:30am–2pm'},
+      4:{start:6.5,end:14,label:'6:30am–2pm'},
+      5:{start:6.5,end:14,label:'6:30am–2pm'},
+      6:{start:6.5,end:12,label:'6:30am–12pm'}
+    };
+    const names = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+    function updateHours(){
+      const now = new Date();
+      const day = now.getDay();
+      const h = now.getHours() + now.getMinutes()/60;
+      const today = schedule[day];
+      const isOpen = h >= today.start && h < today.end;
+      const todayHours = document.getElementById('todayHours');
+      const openText = document.getElementById('openText');
+
+      todayHours.textContent = `Today · ${today.label}`;
+      openText.innerHTML = `<span class="status ${isOpen ? 'open' : ''}"><span class="status-dot"></span>${isOpen ? 'Open now' : 'Closed'}</span>`;
+
+      document.querySelectorAll('.hours-row').forEach(row => {
+        row.classList.toggle('today', Number(row.dataset.day) === day);
+      });
+    }
+    updateHours();
+    setInterval(updateHours, 60000);
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
